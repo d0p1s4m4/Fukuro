@@ -1,0 +1,3 @@
+*.o
+kernel.elf
+node_modules/
