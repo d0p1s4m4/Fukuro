@@ -1,3 +1,4 @@
 *.o
 kernel.elf
 node_modules/
+fukuro.iso
