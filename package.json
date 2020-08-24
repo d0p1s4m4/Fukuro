@@ -1,5 +1,5 @@
 {
-  "name": "Fukurō",
+  "name": "fukuro",
   "version": "1.0.0",
   "description": "",
   "dependencies": {},
@@ -17,5 +17,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "private": true
 }
