@@ -5,7 +5,8 @@ AS	= $(ARCH)-elf-as
 RM	= rm -rf
 
 CFLAGS	= -ansi -pedantic -pedantic-errors -Wall -Werror -Wextra \
-		-ffreestanding -fno-builtin -nostdlib -nostdinc -O2
+		-ffreestanding -fno-builtin -nostdlib -nostdinc -O2 \
+		-Iarch/$(ARCH)/include -Iarch
 ASFLAGS	=
 LDFLAGS	= -T arch/$(ARCH)/linker.ld -ffreestanding -nostdlib
 
@@ -16,27 +17,41 @@ else
  $(error "$(ARCH) is not supported by Fukuro")
 endif
 
-NAME	= kernel.elf
+KERNEL	= kernel.elf
+ISO	= fukuro.iso
 
 KERN_SRCS	= main.c
 OBJS		= $(addprefix kernel/, $(KERN_SRCS:.c=.o)) \
-			$(addprefix arch/$(ARCH)/, $(ARCH_ASM_SRCS:.s=.o)) \
+			$(addprefix arch/$(ARCH)/, $(ARCH_ASM_SRCS:.s=.s.o)) \
 			$(addprefix arch/$(ARCH)/, $(ARCH_C_SRCS:.c=.o))
 
-all: $(NAME)
+all: $(ISO)
 
-$(NAME): $(OBJS)
+$(ISO): $(KERNEL)
+	./scripts/gen_iso.sh
+
+$(KERNEL): $(OBJS)
 	$(CC) $(LDFLAGS) -o $@ $^
 
-%.o: %.s
-	$(AS) $(ASFLAGS) -o $@ $^
+%.s.o: %.s
+	$(AS) $(ASFLAGS) -o $@ $<
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
 	$(RM) $(OBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(KERNEL)
+	$(RM) $(ISO)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+qemu: $(ISO)
+	qemu-kvm -cdrom $< -s -serial stdio
+
+format:
+	find . -type f  -name "*.[h|c]" -exec ./scripts/format.sh {} \;
+
+.PHONY: all clean fclean re qemu format
