@@ -9,9 +9,6 @@ check_cmd () {
 }
 
 check_cmd "indent"
-check_cmd "perl"
-
-perl -i -pe 's/(?<!\")\/\/([\w \t]*$)(?![\w\s]*[\"])/\/*$1 *\//gm' $@
 
 indent \
     -bad -bap \
