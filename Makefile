@@ -6,7 +6,7 @@ RM	= rm -rf
 
 CFLAGS	= -ansi -pedantic -pedantic-errors -Wall -Werror -Wextra \
 		-ffreestanding -fno-builtin -nostdlib -nostdinc -O2 \
-		-Iarch/$(ARCH)/include -Iarch
+		-Iarch/$(ARCH)/include -Iarch -Ilibk/include
 ASFLAGS	=
 LDFLAGS	= -T arch/$(ARCH)/linker.ld -ffreestanding -nostdlib
 
@@ -17,13 +17,16 @@ else
  $(error "$(ARCH) is not supported by Fukuro")
 endif
 
+include libk/build.mk
+
 KERNEL	= kernel.elf
 ISO	= fukuro.iso
 
-KERN_SRCS	= main.c
+KERN_SRCS	= main.c logger.c
 OBJS		= $(addprefix kernel/, $(KERN_SRCS:.c=.o)) \
 			$(addprefix arch/$(ARCH)/, $(ARCH_ASM_SRCS:.s=.s.o)) \
-			$(addprefix arch/$(ARCH)/, $(ARCH_C_SRCS:.c=.o))
+			$(addprefix arch/$(ARCH)/, $(ARCH_C_SRCS:.c=.o)) \
+			$(addprefix libk/, $(LIBK_C_SRCS:.c=.o))
 
 all: $(ISO)
 
