@@ -15,7 +15,11 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+#include <machine/arch.h>
+#include "logger.h"
+
 void
 kmain(void)
 {
+	arch_init();
 }
