@@ -22,4 +22,5 @@ void
 kmain(void)
 {
 	arch_init();
+	LOG(SUCCESS, "Fukuro is alive");
 }
