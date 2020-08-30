@@ -1,5 +1,6 @@
 #include <machine/arch.h>
 #include "serial.h"
+#include "gdt.h"
 
 void
 debug_puts(const char *str)
@@ -24,4 +25,6 @@ arch_init(void)
 	 * COM1 will be used for our debug log 
 	 */
 	serial_init(COM1);
+
+	gdt_init();
 }
