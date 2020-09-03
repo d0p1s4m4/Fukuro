@@ -4,9 +4,13 @@ CC	= $(ARCH)-elf-gcc
 AS	= $(ARCH)-elf-as
 RM	= rm -rf
 
+VERSION	= $$(cat VERSION)
+COMMIT = $$(git rev-parse --short HEAD)
+
 CFLAGS	= -ansi -pedantic -pedantic-errors -Wall -Werror -Wextra \
 		-ffreestanding -fno-builtin -nostdlib -nostdinc -O2 \
-		-Iarch/$(ARCH)/include -Iarch -Ilibk/include
+		-Iarch/$(ARCH)/include -Iarch -Ilibk/include \
+		-DVERSION="\"$(VERSION)\"" -DCOMMIT="\"$(COMMIT)\""
 ASFLAGS	=
 LDFLAGS	= -T arch/$(ARCH)/linker.ld -ffreestanding -nostdlib
 
