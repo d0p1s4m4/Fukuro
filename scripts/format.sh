@@ -8,7 +8,10 @@ check_cmd () {
     fi
 }
 
+check_cmd "dos2unix"
 check_cmd "indent"
+
+dos2unix $@
 
 indent \
     -bad -bap \
