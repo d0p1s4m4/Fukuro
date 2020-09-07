@@ -1,3 +1,15 @@
-# Fukurō
+<div align="center">
 
-Just a tiny x86 kernel for my personal use
+# Fukurō (フクロウ)
+
+[![GitHub](https://img.shields.io/github/license/d0p1S4m4/Fukuro?logo=gnu&style=flat-square)](LICENSE) 
+
+</div>
+
+Fukurō aims to be a highly portable microkernel
+
+<div align="center">
+
+![fukuro i686](.github/screen/fukuro_vbox.png)
+
+</div>
