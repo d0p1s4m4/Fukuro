@@ -3,6 +3,10 @@ ARCH	?= i686
 CC	= $(ARCH)-elf-gcc
 AS	= $(ARCH)-elf-as
 RM	= rm -rf
+SPARSE	= sparse
+ifeq ($(C),)
+	SPARSE := :
+endif
 
 VERSION	= $$(cat VERSION)
 COMMIT = $$(git rev-parse --short HEAD)
@@ -45,6 +49,7 @@ $(KERNEL): $(OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
+	@ $(SPARSE) $(CFLAGS) -c -o $@ $<
 
 clean:
 	$(RM) $(OBJS)
