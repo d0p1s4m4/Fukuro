@@ -16,6 +16,7 @@
  */
 
 #include <machine/arch.h>
+#include "serial.h"
 
 void
 serial_init(uint16_t port)
@@ -32,7 +33,7 @@ serial_init(uint16_t port)
 }
 
 static int
-serial_is_serial_buffer_empty(uint16_t port)
+serial_is_buffer_empty(uint16_t port)
 {
 	return (inb(port + 5) & 0x20);
 }
@@ -40,7 +41,7 @@ serial_is_serial_buffer_empty(uint16_t port)
 void
 serial_write(uint16_t port, uint8_t data)
 {
-	while (serial_is_serial_buffer_empty(port) == 0);
+	while (serial_is_buffer_empty(port) == 0);
 	outb(port, data);
 }
 
