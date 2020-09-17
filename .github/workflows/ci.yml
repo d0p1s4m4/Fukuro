@@ -5,9 +5,10 @@ on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        arch: [i686, aarch64]
     steps:
     - uses: actions/checkout@v1
     - name: Install build dependencies
@@ -20,39 +21,12 @@ jobs:
     - uses: actions/cache@v1
       id: cache
       with:
-        path: toolchain/cross
+        path: toolchain
         key: toolchain
 
-    - name: Build toolchain
-      run: |
-              export PREFIX="$(pwd)/toolchain/cross"
-              mkdir -p "$PREFIX"
-              export TARGET=i686-elf
-              export PATH="$PREFIX/bin:$PATH"
-              echo "::add-path::$PREFIX/bin"
-              if [ ! -d "toolchain/cross/bin" ]; then
-                cd toolchain
-                wget ftp://ftp.lip6.fr/pub/gcc/releases/gcc-10.2.0/gcc-10.2.0.tar.xz
-                tar -xf gcc-10.2.0.tar.xz
-                wget https://ftp.gnu.org/gnu/binutils/binutils-2.35.tar.xz
-                tar -xf binutils-2.35.tar.xz
-                echo "Building binutils"
-                mkdir build-binutils
-                cd build-binutils
-                ../binutils-2.35/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
-                make
-                make install
-                cd ..
-                echo "Building gcc" 
-                mkdir build-gcc
-                cd build-gcc
-                ../gcc-10.2.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c --without-headers
-                make all-gcc
-                make all-target-libgcc
-                make install-gcc
-                make install-target-libgcc
-              fi
+    - name: Build toolchain ${{ matrix.arch }}
+      run: ARCH=${{ matrix.arch }} ./scripts/build_toolchain.sh
 
-    - name: Build Fukuro i686
-      run: make
+    - name: Build Fukuro ${{ matrix.arch }}
+      run: ARCH=${{ matrix.arch }} make
  
