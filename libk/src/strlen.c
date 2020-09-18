@@ -15,6 +15,8 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+#include <kern/string.h>
+
 int
 strlen(const char *str)
 {

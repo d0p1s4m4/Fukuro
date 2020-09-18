@@ -1,1 +1,1 @@
-LIBK_C_SRCS	= itoa.c strlen.c strrev.c
+LIBK_C_SRCS	= $(addprefix src/, itoa.c strlen.c strrev.c)

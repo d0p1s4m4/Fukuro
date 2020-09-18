@@ -28,12 +28,13 @@ itoa(int number, char *buffer, int base)
 	{
 		digit = number % base;
 		if (digit < 0xA)		/* base16 support */
-			buffer[idx++] = digit + '0';
+			buffer[idx] = digit + '0';
 		else
-			buffer[idx++] = (digit - 0xA) + 'A';
-		number /= 10;
+			buffer[idx] = (digit - 0xA) + 'A';
+		number /= base;
+		idx++;
 	}
 	while (number);
 	buffer[idx] = '\0';
-	return strrev(buffer);
+	return (strrev(buffer));
 }
