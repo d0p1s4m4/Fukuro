@@ -22,7 +22,7 @@ jobs:
       id: cache
       with:
         path: toolchain
-        key: toolchain
+        key: toolchain-${{ matrix.arch }}
 
     - name: Build toolchain ${{ matrix.arch }}
       run: ARCH=${{ matrix.arch }} ./scripts/build_toolchain.sh
