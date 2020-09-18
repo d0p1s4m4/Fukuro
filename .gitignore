@@ -1,5 +1,6 @@
 *.o
 kernel.elf
 node_modules/
+toolchain/
 fukuro.iso
 *~
