@@ -29,4 +29,14 @@ jobs:
 
     - name: Build Fukuro ${{ matrix.arch }}
       run: ARCH=${{ matrix.arch }} make
- 
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install build-essential libcmocka-dev
+      - name: Build and run tests
+        run: make test

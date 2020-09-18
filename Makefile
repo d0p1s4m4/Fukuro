@@ -36,7 +36,19 @@ OBJS		= $(addprefix kernel/, $(KERN_SRCS:.c=.o)) \
 			$(addprefix arch/$(ARCH)/, $(ARCH_C_SRCS:.c=.o)) \
 			$(addprefix libk/, $(LIBK_C_SRCS:.c=.o))
 
+OBJS_TEST	= $(addprefix libk/, $(LIBK_C_SRCS:.c=.o)) \
+			$(addprefix libk/, $(LIBK_C_TESTS:.c=.o))
+
+test: CFLAGS	= -Wall -Werror -Wextra  -fno-builtin \
+				-Iarch/$(ARCH)/include -Iarch -Ilibk/include
+test: LDFLAGS	= -lcmocka
+test: CC		= gcc
+
 all: $(ISO)
+
+test: $(OBJS_TEST)
+	$(CC) -o $@ $^ $(LDFLAGS)
+	./$@
 
 $(ISO): $(KERNEL)
 	./scripts/gen_iso.sh
@@ -53,10 +65,12 @@ $(KERNEL): $(OBJS)
 
 clean:
 	$(RM) $(OBJS)
+	$(RM) $(OBJS_TEST)
 
 fclean: clean
 	$(RM) $(KERNEL)
 	$(RM) $(ISO)
+	$(RM) test
 
 re: fclean all
 
