@@ -15,21 +15,41 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-int             strlen_group_tests(void);
-int             strrev_group_tests(void);
-int             itoa_group_tests(void);
-int             memset_group_tests(void);
+#include <kern/string.h>
+
+#include <stdarg.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <stdint.h>
+#include <cmocka.h>
+
+static void
+bzero_test(void **state)
+{
+	char            buff[3] = "ok";
+
+	(void) state;
+	bzero(buff, 3);
+	assert_memory_equal(buff, "\0\0\0", 3);
+}
+
+static void
+memset_test(void **state)
+{
+	char            buff[5];
+
+	(void) state;
+	assert_ptr_equal(memset(buff, 'a', 5), buff);
+	assert_memory_equal(buff, "aaaaa", 5);
+}
 
 int
-main(void)
+memset_group_tests(void)
 {
-	int             result;
+	const struct CMUnitTest tests[] = {
+		cmocka_unit_test(bzero_test),
+		cmocka_unit_test(memset_test),
+	};
 
-	result = 0;
-	result |= strlen_group_tests();
-	result |= strrev_group_tests();
-	result |= itoa_group_tests();
-	result |= memset_group_tests();
-
-	return (result);
+	return cmocka_run_group_tests(tests, NULL, NULL);
 }

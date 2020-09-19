@@ -21,5 +21,7 @@
 char           *itoa(int, char *, int);
 char           *strrev(char *);
 int             strlen(const char *);
+void           *memset(void *, int, unsigned int);
+void            bzero(void *, unsigned int);
 
 #endif							/* !_KERN_STRING_H_ */

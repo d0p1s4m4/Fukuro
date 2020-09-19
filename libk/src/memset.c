@@ -15,21 +15,21 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-int             strlen_group_tests(void);
-int             strrev_group_tests(void);
-int             itoa_group_tests(void);
-int             memset_group_tests(void);
+#include <kern/string.h>
 
-int
-main(void)
+void *
+memset(void *dest, int value, unsigned int length)
 {
-	int             result;
+	char           *ptr;
 
-	result = 0;
-	result |= strlen_group_tests();
-	result |= strrev_group_tests();
-	result |= itoa_group_tests();
-	result |= memset_group_tests();
+	ptr = (char *) dest;
+	while (length--)
+		*ptr++ = value;
+	return (dest);
+}
 
-	return (result);
+void
+bzero(void *dest, unsigned int length)
+{
+	memset(dest, 0, length);
 }
