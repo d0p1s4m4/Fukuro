@@ -24,7 +24,7 @@
 #include <cmocka.h>
 
 static void
-itoa_hex_deadbeef(void **state)
+itoa_test_hex_deadbeef(void **state)
 {
 	char            buff[7];
 
@@ -33,7 +33,7 @@ itoa_hex_deadbeef(void **state)
 }
 
 static void
-itoa_hex_f(void **state)
+itoa_test_hex_f(void **state)
 {
 	char            buff[2];
 
@@ -42,7 +42,7 @@ itoa_hex_f(void **state)
 }
 
 static void
-itoa_binary_2(void **state)
+itoa_test_binary_2(void **state)
 {
 	char            buff[3];
 
@@ -51,7 +51,7 @@ itoa_binary_2(void **state)
 }
 
 static void
-itoa_42(void **state)
+itoa_test_42(void **state)
 {
 	char            buff[3];
 
@@ -63,10 +63,10 @@ int
 itoa_group_tests(void)
 {
 	const struct CMUnitTest tests[] = {
-		cmocka_unit_test(itoa_hex_deadbeef),
-		cmocka_unit_test(itoa_hex_f),
-		cmocka_unit_test(itoa_binary_2),
-		cmocka_unit_test(itoa_42),
+		cmocka_unit_test(itoa_test_hex_deadbeef),
+		cmocka_unit_test(itoa_test_hex_f),
+		cmocka_unit_test(itoa_test_binary_2),
+		cmocka_unit_test(itoa_test_42),
 	};
 
 	return cmocka_run_group_tests(tests, NULL, NULL);
