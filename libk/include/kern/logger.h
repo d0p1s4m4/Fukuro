@@ -15,8 +15,8 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#ifndef _KERNEL_LOGGER_H_
-# define _KERNEL_LOGGER_H_ 1
+#ifndef _KERN_LOGGER_H_
+# define _KERN_LOGGER_H_ 1
 
 enum log_level
 {
@@ -35,4 +35,4 @@ enum log_level
 
 void            __log(int, const char *, uint16_t, const char *);
 
-#endif							/* !_KERNEL_LOGGER_H_ */
+#endif							/* !_KERN_LOGGER_H_ */

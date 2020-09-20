@@ -16,6 +16,7 @@
  */
 
 #include <machine/arch.h>
+#include <kern/logger.h>
 #include <kern/string.h>
 
 static const char *LOG_LEVEL_STR[] = {

@@ -20,6 +20,24 @@ int             strrev_group_tests(void);
 int             itoa_group_tests(void);
 int             memset_group_tests(void);
 
+/*
+ * required by logger.c 
+ */
+void
+debug_puts(const char *str)
+{
+	(void) str;
+}
+
+/*
+ * required by logger.c 
+ */
+void
+debug_putchar(const char c)
+{
+	(void) c;
+}
+
 int
 main(void)
 {

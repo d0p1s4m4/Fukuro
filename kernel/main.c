@@ -16,7 +16,7 @@
  */
 
 #include <machine/arch.h>
-#include "logger.h"
+#include <kern/logger.h>
 
 void
 kmain(void)
