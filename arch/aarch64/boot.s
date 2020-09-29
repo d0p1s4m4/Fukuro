@@ -15,10 +15,25 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+#include <kern/string.h>
+
 .section ".text.boot"
 
 .extern kmain
 
 .globl _start
 _start:
+	mrs x0, mpidr_el1			/* read multiprocessor affinity reg */
+	and x0, x0, #0xFF			/* check if core 0 otherwhise hang */
+	cbnz x0, master
+proc_hang:
+	b proc_hang
+	
+master:
+	adr x0, bss_begin
+	adr x1, bss_end
+	sub x1, x1, x0
+	bl bzero					/* clear .bss section */
+
+	/* start kernel */
 	bl kmain
