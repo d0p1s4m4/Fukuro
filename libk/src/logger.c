@@ -20,7 +20,7 @@
 #include <kern/string.h>
 
 static const char *LOG_LEVEL_STR[] = {
-	"   ", "\033[32m[+]\033[0m", "\033[33m[-]\033[0m", "\033[31m[!]\033[0m"
+	"[*]", "\033[32m[+]\033[0m", "\033[33m[-]\033[0m", "\033[31m[!]\033[0m"
 };
 
 static void
@@ -40,8 +40,11 @@ __log(int level, const char *file, uint16_t line, const char *msg)
 	debug_print_int(line);
 	debug_putchar(' ');
 
-	debug_puts(LOG_LEVEL_STR[level]);
-	debug_putchar(' ');
+	if (level != NONE)
+	{
+		debug_puts(LOG_LEVEL_STR[level]);
+		debug_putchar(' ');
+	}
 	debug_puts(msg);
 	debug_putchar('\n');
 }
