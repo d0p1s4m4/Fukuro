@@ -1,7 +1,10 @@
+.DEFAULT_GOAL = all
+
 # Global config
 ARCH	?= i686
 CC	= $(ARCH)-elf-gcc
 AS	= $(ARCH)-elf-as
+OBJCOPY	= $(ARCH)-elf-objcopy
 RM	= rm -rf
 SPARSE	= sparse
 ifeq ($(C),)
@@ -18,6 +21,8 @@ CFLAGS	= -ansi -pedantic -pedantic-errors -Wall -Werror -Wextra \
 ASFLAGS	=
 LDFLAGS	= -T arch/$(ARCH)/linker.ld -ffreestanding -nostdlib
 
+KERNEL	= kernel.elf
+
 # import arch specific build config
 ifneq "$(wildcard arch/$(ARCH)/)" ""
  include arch/$(ARCH)/build.mk
@@ -28,8 +33,7 @@ endif
 include kernel/build.mk
 include libk/build.mk
 
-KERNEL	= kernel.elf
-ISO	= fukuro.iso
+TARGET	?= $(KERNEL)
 
 OBJS		= $(addprefix kernel/, $(KERN_C_SRCS:.c=.o)) \
 			$(addprefix arch/$(ARCH)/, $(ARCH_ASM_SRCS:.s=.s.o)) \
@@ -44,14 +48,11 @@ test: CFLAGS	= -Wall -Werror -Wextra  -fno-builtin \
 test: LDFLAGS	= -lcmocka
 test: CC		= gcc
 
-all: $(ISO)
+all: $(TARGET)
 
 test: $(OBJS_TEST)
 	$(CC) -o $@ $^ $(LDFLAGS)
 	./$@
-
-$(ISO): $(KERNEL)
-	./scripts/gen_iso.sh
 
 $(KERNEL): $(OBJS)
 	$(CC) $(LDFLAGS) -o $@ $^
@@ -69,13 +70,10 @@ clean:
 
 fclean: clean
 	$(RM) $(KERNEL)
-	$(RM) $(ISO)
+	$(RM) $(TARGET)
 	$(RM) test
 
 re: fclean all
-
-qemu: $(ISO)
-	qemu-kvm -cdrom $< -s -serial stdio
 
 format:
 	find . -type f  -name "*.[h|c]" -exec ./scripts/format.sh {} \;
