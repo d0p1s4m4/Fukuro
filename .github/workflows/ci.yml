@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        arch: [i686, aarch64]
+        arch: [i686, aarch64, arm]
     steps:
     - uses: actions/checkout@v1
     - name: Install build dependencies

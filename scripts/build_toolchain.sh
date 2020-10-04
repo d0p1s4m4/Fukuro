@@ -13,7 +13,12 @@ if [ -z ${BINUTILS_VERSION+x} ]; then
 fi
 
 PREFIX="$(pwd)/toolchain"
-TARGET="$ARCH-elf"
+# XXX: quick fix
+if [ "$ARCH" = "arm" ]; then
+    TARGET="$ARCH-none-eabi"
+else
+    TARGET="$ARCH-elf"
+fi
 PATH="$PREFIX/bin:$PATH"
 
 if [ "$GITHUB_ACTIONS" = true ]; then
@@ -22,7 +27,7 @@ fi
 
 mkdir -p "$PREFIX"
 
-echo "Selected Toolchain: $ARCH-elf" 
+echo "Selected Toolchain: $TARGET"
 
 if [ ! -f "$PREFIX/bin/$ARCH-elf-gcc" ]; then
 	echo "Toolchain not found"
