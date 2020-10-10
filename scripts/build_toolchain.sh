@@ -29,7 +29,7 @@ mkdir -p "$PREFIX"
 
 echo "Selected Toolchain: $TARGET"
 
-if [ ! -f "$PREFIX/bin/$ARCH-elf-gcc" ]; then
+if [ ! -f "$PREFIX/bin/$TARGET-gcc" ]; then
 	echo "Toolchain not found"
 	cd "$PREFIX"
 	if [ ! -f "gcc-$GCC_VERSION.tar.xz" ]; then
