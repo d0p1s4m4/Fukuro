@@ -1,5 +1,7 @@
 SECTIONS
 {
+        . = 0x80000;
+
         .text.boot :
         {
                 *(.text.boot)
@@ -20,7 +22,7 @@ SECTIONS
                 *(.data)
         }
 
-        . = ALIGN(0x8);
+        . = ALIGN(16);
 
         bss_begin = .;
         .bss :

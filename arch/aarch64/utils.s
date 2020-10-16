@@ -15,14 +15,19 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#ifndef _MACHINE_ARCH_H_
-# define _MACHINE_ARCH_H_ 1
+.globl mmio_write
+mmio_write:
+        str w1, [x0]
+        ret
 
-# include <generic/arch.h>
-# include <machine/types.h>
+.globl mmio_read
+mmio_read:
+        ldr w0, [x0]
+        ret
 
-extern void     mmio_write(uint32_t, uint32_t);
-extern uint32_t mmio_read(uint32_t);
-extern void     delay_cycles(uint32_t);
+.globl delay_cycles
+delay_cycles:
+	subs x0, x0, #1
+	bne delay_cycles
+	ret
 
-#endif							/* !_MACHINE_ARCH_H_ */
