@@ -25,7 +25,7 @@ debug_puts(const char *str)
 {
 	char           *ptr;
 
-	ptr = (char *) str;
+	ptr = (char *)str;
 	while (*ptr != '\0')
 		serial_write(COM1, *ptr++);
 }
@@ -46,7 +46,7 @@ greeting_screen(void)
 		"    |  _| | | | |/ / | | | '__/ _ \\ \n",
 		"    | | | |_| |   <| |_| | | | (_) |\n",
 		"    \\_|  \\__,_|_|\\_\\\\__,_|_|  \\___/ \n",
-		(void *) 0
+		(void *)0
 	};
 	static const char *MESSAGE_AND_COPYRIGHT =
 		"                                    v" VERSION " - " COMMIT "\n\n"
@@ -61,7 +61,7 @@ greeting_screen(void)
 	int             idx;
 
 	logo_color = 0x09;
-	for (idx = 0; LOGO_ASCII[idx] != (void *) 0; idx++)
+	for (idx = 0; LOGO_ASCII[idx] != (void *)0; idx++)
 		vga_puts(LOGO_ASCII[idx], logo_color++, 0x0);
 
 	vga_puts(MESSAGE_AND_COPYRIGHT, 0xf, 0x0);
