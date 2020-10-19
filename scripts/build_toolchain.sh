@@ -22,7 +22,7 @@ fi
 PATH="$PREFIX/bin:$PATH"
 
 if [ "$GITHUB_ACTIONS" = true ]; then
-	echo "::add-path::$PREFIX/bin"
+	echo "$PREFIX/bin"  >> $GITHUB_PATH
 fi
 
 mkdir -p "$PREFIX"
