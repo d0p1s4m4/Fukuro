@@ -23,6 +23,9 @@ itoa(int number, char *buffer, int base)
 	int             digit;
 	int             idx;
 
+	if (number < 0)
+		number *= -1;
+
 	idx = 0;
 	do
 	{
