@@ -16,48 +16,44 @@
  */
 
 #include <machine/arch.h>
-#include "stivale.h"
 #include "serial.h"
 
-void	kmain(void);
-
-static char     stack[4096] = { 0 };
-
-__attribute__((section(".stivalehdr"), used))
-struct stivale_header stivalehdr = {
-	(uint64_t)stack + sizeof(stack),
-	0,
-	0,
-	0,
-	0,
-	0
-};
-
 void
-debug_puts(const char *str)
+serial_init(uint16_t port)
 {
-	while (*str != '\0')
-		serial_write(COM1, *str++);
+	outb(port + 1, 0x00);		/* disable all interrupts */
+
+	outb(port + 2, 0x80);		/* enable DLAB */
+	outb(port + 0, 0x0C);		/* 9600 baud */
+	outb(port + 1, 0x00);
+
+	outb(port + 3, 0x08);		/* 7 bits , no parity , 1 stop bit */
+	outb(port + 2, 0xC7);
+	outb(port + 4, 0x0B);		/* enable IRQs and set RTS/DTS */
+}
+
+static int
+serial_is_buffer_empty(uint16_t port)
+{
+	return (inb(port + 5) & 0x20);
 }
 
 void
-debug_putchar(char c)
+serial_write(uint16_t port, uint8_t data)
 {
-	serial_write(COM1, c);
+	while (serial_is_buffer_empty(port) == 0);
+	outb(port, data);
 }
 
-void
-arch_init(void)
+static int
+serial_received(uint16_t port)
 {
-	serial_init(COM1);
+	return (inb(port + 5) & 1);
 }
 
-void
-_start(struct stivale_struct *data)
+uint8_t
+serial_read(uint16_t port)
 {
-	kmain();
-	debug_puts((char *)data->cmdline);
-	debug_putchar('\r');
-	debug_putchar('\n');
-	__asm__ volatile ("hlt");
+	while (serial_received(port) == 0);
+	return (inb(port));
 }

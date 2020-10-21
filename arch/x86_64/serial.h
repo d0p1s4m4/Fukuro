@@ -15,49 +15,16 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include <machine/arch.h>
-#include "stivale.h"
-#include "serial.h"
+#ifndef _X86_64_SERIAL_H_
+# define _X86_64_SERIAL_H_ 1
 
-void	kmain(void);
+# define COM1 0x3F8
+# define COM2 0x2F8
+# define COM3 0x3E8
+# define COM4 0x2E8
 
-static char     stack[4096] = { 0 };
+void            serial_init(uint16_t);
+void            serial_write(uint16_t, uint8_t);
+uint8_t         serial_read(uint16_t);
 
-__attribute__((section(".stivalehdr"), used))
-struct stivale_header stivalehdr = {
-	(uint64_t)stack + sizeof(stack),
-	0,
-	0,
-	0,
-	0,
-	0
-};
-
-void
-debug_puts(const char *str)
-{
-	while (*str != '\0')
-		serial_write(COM1, *str++);
-}
-
-void
-debug_putchar(char c)
-{
-	serial_write(COM1, c);
-}
-
-void
-arch_init(void)
-{
-	serial_init(COM1);
-}
-
-void
-_start(struct stivale_struct *data)
-{
-	kmain();
-	debug_puts((char *)data->cmdline);
-	debug_putchar('\r');
-	debug_putchar('\n');
-	__asm__ volatile ("hlt");
-}
+#endif							/* !_X86_64_SERIAL_H */
