@@ -44,8 +44,9 @@ OBJS_TEST	= $(addprefix libk/, $(LIBK_C_SRCS:.c=.o)) \
 			$(addprefix libk/, $(LIBK_C_TESTS:.c=.o))
 
 test: CFLAGS	= -Wall -Werror -Wextra  -fno-builtin \
-				-Iarch/$(ARCH)/include -Iarch -Ilibk/include
-test: LDFLAGS	= -lcmocka
+				-Iarch/$(ARCH)/include -Iarch -Ilibk/include \
+				 --coverage
+test: LDFLAGS	= -lcmocka --coverage
 test: CC		= gcc
 
 all: $(TARGET)
@@ -67,6 +68,8 @@ $(KERNEL): $(OBJS)
 clean:
 	$(RM) $(OBJS)
 	$(RM) $(OBJS_TEST)
+	$(RM) $(OBJS_TEST:.o=.gcda)
+	$(RM) $(OBJS_TEST:.o=.gcno)
 
 fclean: clean
 	$(RM) $(KERNEL)
@@ -78,4 +81,4 @@ re: fclean all
 format:
 	find . -type f  -name "*.[h|c]" -exec ./scripts/format.sh {} \;
 
-.PHONY: all clean fclean re qemu format
+.PHONY: all clean fclean re qemu format test

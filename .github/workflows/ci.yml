@@ -40,3 +40,5 @@ jobs:
           sudo apt-get install build-essential libcmocka-dev
       - name: Build and run tests
         run: make test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
