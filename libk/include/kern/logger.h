@@ -27,7 +27,7 @@ enum log_level {
 };
 
 # ifndef NDEBUG
-#  define LOG(level, msg, ...) __log(level, __FILE__, __LINE__, msg, __VA_ARGS__);
+#  define LOG(level, ...) __log(level, __FILE__, __LINE__, __VA_ARGS__);
 # else
 #  define LOG(level, msg, ...)
 # endif							/* !NDEBUG */

@@ -64,10 +64,10 @@ __log(int level, const char *file, uint16_t line, const char *msg, ...)
 				debug_print_int(va_arg(args, int), 10);
 				break;
 			case 'x':
-				debug_print_hex(va_arg(args, int), 16);
+				debug_print_int(va_arg(args, int), 16);
 				break;
 			case 'X':
-				debug_print_hex(va_arg(args, int), 16);
+				debug_print_int(va_arg(args, int), 16);
 				break;
 			case 's':
 				debug_puts(va_arg(args, char *));
