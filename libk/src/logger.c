@@ -16,6 +16,7 @@
  */
 
 #include <machine/arch.h>
+#include <kern/vararg.h>
 #include <kern/logger.h>
 #include <kern/string.h>
 
@@ -24,20 +25,22 @@ static const char *LOG_LEVEL_STR[] = {
 };
 
 static void
-debug_print_int(int number)
+debug_print_int(int number, int base)
 {
-	char            buff[5];	/* 99 999 */
+	char            buff[6];	/* 99 999 */
 
-	itoa(number, buff, 10);
+	itoa(number, buff, base);
 	debug_puts(buff);
 }
 
 void
-__log(int level, const char *file, uint16_t line, const char *msg)
+__log(int level, const char *file, uint16_t line, const char *msg, ...)
 {
+	va_list         args;
+
 	debug_puts(file);
 	debug_putchar(':');
-	debug_print_int(line);
+	debug_print_int(line, 10);
 	debug_putchar(' ');
 
 	if (level != NONE)
@@ -45,6 +48,44 @@ __log(int level, const char *file, uint16_t line, const char *msg)
 		debug_puts(LOG_LEVEL_STR[level]);
 		debug_putchar(' ');
 	}
-	debug_puts(msg);
+
+	va_start(args, msg);
+	while (*msg)
+	{
+		if (*msg == '%')
+		{
+			msg++;
+			switch (*msg)
+			{
+			 case 'c':
+				 debug_putchar((char)va_arg(args, int));
+
+				 break;
+			 case 'd':
+				 debug_print_int(va_arg(args, int), 10);
+
+				 break;
+			 case 'x':
+				 debug_print_hex(va_arg(args, int), 16);
+				 break;
+			 case 'X':
+				 debug_print_hex(va_arg(args, int), 16);
+				 break;
+			 case 's':
+				 debug_puts(va_arg(args, char *));
+
+				 break;
+			 default:
+				 debug_putchar('%');
+				 break;
+			}
+		}
+		else
+		{
+			debug_putchar(*msg);
+		}
+		msg++;
+	}
+	va_end(args);
 	debug_putchar('\n');
 }

@@ -15,23 +15,12 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#ifndef _KERN_LOGGER_H_
-# define _KERN_LOGGER_H_ 1
+#ifndef _KERN_VARARG_H_
+# define _KERN_VARARG_H_ 1
 
-enum log_level {
-	INFO,
-	SUCCESS,
-	WARNING,
-	ERROR,
-	NONE = -1
-};
+# define va_list __builtin_va_list
+# define va_start(v, f) __builtin_va_start(v, f)
+# define va_end(v) __builtin_va_end(v)
+# define va_arg(v, a) __builtin_va_arg(v, a)
 
-# ifndef NDEBUG
-#  define LOG(level, msg, ...) __log(level, __FILE__, __LINE__, msg, __VA_ARGS__);
-# else
-#  define LOG(level, msg, ...)
-# endif							/* !NDEBUG */
-
-void            __log(int, const char *, uint16_t, const char *, ...);
-
-#endif							/* !_KERN_LOGGER_H_ */
+#endif							/* !_VARARG_LOGGER_H_ */
