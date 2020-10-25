@@ -57,27 +57,24 @@ __log(int level, const char *file, uint16_t line, const char *msg, ...)
 			msg++;
 			switch (*msg)
 			{
-			 case 'c':
-				 debug_putchar((char)va_arg(args, int));
-
-				 break;
-			 case 'd':
-				 debug_print_int(va_arg(args, int), 10);
-
-				 break;
-			 case 'x':
-				 debug_print_hex(va_arg(args, int), 16);
-				 break;
-			 case 'X':
-				 debug_print_hex(va_arg(args, int), 16);
-				 break;
-			 case 's':
-				 debug_puts(va_arg(args, char *));
-
-				 break;
-			 default:
-				 debug_putchar('%');
-				 break;
+			case 'c':
+				debug_putchar((char)va_arg(args, int));
+				break;
+			case 'd':
+				debug_print_int(va_arg(args, int), 10);
+				break;
+			case 'x':
+				debug_print_hex(va_arg(args, int), 16);
+				break;
+			case 'X':
+				debug_print_hex(va_arg(args, int), 16);
+				break;
+			case 's':
+				debug_puts(va_arg(args, char *));
+				break;
+			default:
+				debug_putchar('%');
+				break;
 			}
 		}
 		else
