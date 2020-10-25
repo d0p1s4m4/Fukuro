@@ -9,7 +9,7 @@ First, thanks for taking the time to contribute! :heart_eyes_cat::+1:
   * [Reporting Bugs](#reporting-bugs)
       - [Before Submitting A But Report](#before-submitting-a-but-report)
       - [How Do I Submit A (GOOD) Bug Report](#how-do-i-submit-a--good--bug-report-)
-  * [Your first code contribution](#your-first-code-contribution)
+  * [Your First Code Contribution](#your-first-code-contribution)
 - [Styleguides](#styleguides)
   * [Git Commit Message](#git-commit-message)
   * [C Coding Style](#c-coding-style)
@@ -29,7 +29,7 @@ Before creating bug reports, please check [this list](#before-submitting-a-bug-r
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
-#### Before Submitting A But Report
+#### Before Submitting A Bug Report
 
 * **Perform a [cursory search](https://github.com/search?q=+is%3Aissue+user%3Fukuro)** to see if the problem has already been reported. If it has **and the issue is still open**, add a comment to the existing issue instead of opening a new one.
 
@@ -57,7 +57,7 @@ Include details about your configuration and environment:
 * **Are you running Fukurō in a virtual machine?** If so, which VM software are you using ?
 * **Are you running Fukurō on real hardware?** If so, provide information about it.
 
-### Your first code contribution
+### Your First Code Contribution
 
 Unsure where to begin contributing to Fukurō? You can start by looking through these `beginner` and `help-wanted` issues:
 
