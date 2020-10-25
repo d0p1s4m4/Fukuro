@@ -19,6 +19,9 @@
 #include "serial.h"
 #include "vga.h"
 #include "gdt.h"
+#include "idt.h"
+#include "cpuid.h"
+#include "pic.h"
 
 void
 debug_puts(const char *str)
@@ -78,4 +81,6 @@ arch_init(void)
 	serial_init(COM1);
 
 	gdt_init();
+	pic_remap();
+	idt_init();
 }
