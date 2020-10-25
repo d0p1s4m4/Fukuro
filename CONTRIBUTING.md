@@ -53,7 +53,7 @@ Provide more context by answering these questions:
 
 Include details about your configuration and environment:
 
-* **Which version of Fukuō are you using?**
+* **Which version of Fukurō are you using?**
 * **Are you running Fukurō in a virtual machine?** If so, which VM software are you using ?
 * **Are you running Fukurō on real hardware?** If so, provide information about it.
 
