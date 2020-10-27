@@ -79,8 +79,8 @@ arch_init(void)
 	 * COM1 will be used for our debug log 
 	 */
 	serial_init(COM1);
-
 	gdt_init();
+	cpuid_dump_info();
 	pic_remap();
 	idt_init();
 }
