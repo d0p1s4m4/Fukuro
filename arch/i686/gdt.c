@@ -18,10 +18,10 @@
 #include <machine/arch.h>
 #include "gdt.h"
 
-struct gdt_entry gdt_entries[5];
-struct gdt_ptr  gdt_ptr;
+static struct gdt_entry gdt_entries[5];
+static struct gdt_ptr  gdt_ptr;
 
-static __inline__ void
+static void
 gdt_set_table(struct gdt_entry *table, uint32_t base, uint32_t limit,
 			  uint8_t access, uint8_t flags)
 {
