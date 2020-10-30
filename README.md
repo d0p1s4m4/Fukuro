@@ -10,8 +10,9 @@
 
 </div>
 
-Fukurō aims to be a highly portable microkernel
+## Fukurō aims to be a highly portable microkernel
 
+A screenchoot : 
 <div align="center">
 
 ![fukuro i686](.github/screen/fukuro_vbox.png)
