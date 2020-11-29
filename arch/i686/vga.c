@@ -60,11 +60,11 @@ vga_clear(void)
 	int             w;
 	int             h;
 
-	for (w = 0; w < VGA_WIDTH; w++)
+	for (h = 0; h < VGA_HEIGHT; h++)
 	{
-		for (h = 0; h < VGA_HEIGHT; h++)
+		for (w = 0; w < VGA_WIDTH; w++)
 		{
-			vram[w * 80 + h] = 0x0020;
+			vram[h * 80 + w] = 0x0020;
 		}
 	}
 }
