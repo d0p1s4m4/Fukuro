@@ -15,8 +15,8 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#ifndef _I686_SERIAL_H_
-# define _I686_SERIAL_H_ 1
+#ifndef _X86_SERIAL_H_
+# define _X86_SERIAL_H_ 1
 
 # define COM1 0x3F8
 # define COM2 0x2F8
@@ -27,4 +27,4 @@ void            serial_init(uint16_t);
 void            serial_write(uint16_t, uint8_t);
 uint8_t         serial_read(uint16_t);
 
-#endif							/* !_I686_SERIAL_H */
+#endif							/* !_X86_64_SERIAL_H */

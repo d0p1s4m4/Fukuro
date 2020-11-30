@@ -57,3 +57,16 @@ serial_read(uint16_t port)
 	while (serial_received(port) == 0);
 	return (inb(port));
 }
+
+void
+debug_puts(const char *str)
+{
+	while (*str != '\0')
+		serial_write(COM1, *str++);
+}
+
+void
+debug_putchar(char c)
+{
+	serial_write(COM1, c);
+}

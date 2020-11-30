@@ -16,8 +16,9 @@
  */
 
 #include <machine/arch.h>
+#include <x86/serial.h>
+#include <x86/greeting.h>
 #include "stivale.h"
-#include "serial.h"
 
 void	kmain(void);
 
@@ -34,30 +35,18 @@ struct stivale_header stivalehdr = {
 };
 
 void
-debug_puts(const char *str)
-{
-	while (*str != '\0')
-		serial_write(COM1, *str++);
-}
-
-void
-debug_putchar(char c)
-{
-	serial_write(COM1, c);
-}
-
-void
 arch_init(void)
 {
 	serial_init(COM1);
+
+	greeting_screen();
 }
 
 void
 _start(struct stivale_struct *data)
 {
+	(void)data;
+	
 	kmain();
-	debug_puts((char *)data->cmdline);
-	debug_putchar('\r');
-	debug_putchar('\n');
 	__asm__ volatile ("hlt");
 }
