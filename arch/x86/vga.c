@@ -38,7 +38,7 @@ vga_putchar(char c, uint8_t fg, uint8_t bg)
 	else
 	{
 		color = fg | (bg << 4);
-		vram[vga_y * 80 + vga_x] = c | (color << 8);
+		vram[vga_y * VGA_WIDTH + vga_x] = c | (color << 8);
 		vga_x++;
 	}
 }
@@ -64,7 +64,7 @@ vga_clear(void)
 	{
 		for (w = 0; w < VGA_WIDTH; w++)
 		{
-			vram[h * 80 + w] = 0x0020;
+			vram[h * VGA_WIDTH + w] = 0x0020;
 		}
 	}
 }

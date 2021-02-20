@@ -28,13 +28,13 @@ greeting_screen(void)
 	int             idx;
 
 	vga_clear();
-	logo_color = 0x09;
+	logo_color = VGA_COLOR_LIGHT_BLUE;
 	for (idx = 0; LOGO_ASCII[idx] != (void *)0; idx++)
 	{
-		vga_puts(LOGO_ASCII[idx], logo_color++, 0x0);
+		vga_puts(LOGO_ASCII[idx], logo_color++, VGA_COLOR_BLACK);
 		debug_puts(LOGO_ASCII[idx]);
 	}
 
-	vga_puts(MESSAGE_AND_COPYRIGHT, 0xf, 0x0);
+	vga_puts(MESSAGE_AND_COPYRIGHT, VGA_COLOR_WHITE, VGA_COLOR_BLACK);
 	debug_puts(MESSAGE_AND_COPYRIGHT);
 }
