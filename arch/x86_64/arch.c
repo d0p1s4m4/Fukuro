@@ -18,18 +18,18 @@
 #include <machine/arch.h>
 #include <x86/serial.h>
 #include <x86/greeting.h>
-#include "stivale.h"
+#include <generic/stivale2.h>
+#include <kern/logger.h>
 
 void	kmain(void);
+void	_start(struct stivale2_struct *data);
 
 static char     stack[4096] = { 0 };
 
-__attribute__((section(".stivalehdr"), used))
-struct stivale_header stivalehdr = {
+__attribute__((section(".stivale2hdr"), used))
+struct stivale2_header stivale2hdr = {
+	(uint64_t)&_start,
 	(uint64_t)stack + sizeof(stack),
-	0,
-	0,
-	0,
 	0,
 	0
 };
@@ -37,16 +37,18 @@ struct stivale_header stivalehdr = {
 void
 arch_init(void)
 {
-	serial_init(COM1);
-
 	greeting_screen();
 }
 
 void
-_start(struct stivale_struct *data)
+_start(struct stivale2_struct *data)
 {
-	(void)data;
-	
+	serial_init(COM1);
+
+	LOG(INFO, "Boot protocol: Stivale2");
+	LOG(INFO, "Bootloader: %s", data->bootloader_brand);
+
 	kmain();
+
 	__asm__ volatile ("hlt");
 }
