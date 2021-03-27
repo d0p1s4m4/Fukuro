@@ -32,4 +32,5 @@ debug_putchar(char c)
 void
 arch_init(void)
 {
+	kmain();
 }

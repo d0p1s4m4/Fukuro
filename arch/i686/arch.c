@@ -18,6 +18,7 @@
 #include <machine/arch.h>
 #include <x86/serial.h>
 #include <x86/greeting.h>
+#include <generic/stivale2.h>
 #include "gdt.h"
 #include "idt.h"
 #include "cpuid.h"
@@ -37,4 +38,20 @@ arch_init(void)
 	cpuid_dump_info();
 	pic_remap();
 	idt_init();
+
+	kmain();
+}
+
+void
+boot_stivale2(struct stivale2_struct data)
+{
+	(void)data;
+
+	arch_init();
+}
+
+void
+boot_multiboot(void)
+{
+	arch_init();
 }

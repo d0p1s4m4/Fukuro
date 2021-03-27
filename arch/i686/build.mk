@@ -1,6 +1,7 @@
 # overwrite main makefile config
 AS		= nasm
 ASFLAGS		= -f elf32
+CFLAGS		+= -Wno-long-long
 
 include arch/x86/build.mk
 

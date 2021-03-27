@@ -63,4 +63,6 @@ arch_init(void)
 {
 	detect_rpi_board();
 	serial_init();
+
+	kmain();
 }

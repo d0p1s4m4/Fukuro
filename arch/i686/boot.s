@@ -54,7 +54,8 @@ multiboot2_header:
 	;; --------------------------------------------------------------------
 section .stivale2hdr
 align 4
-	dq kmain
+	extern boot_stivale2
+	dq boot_stivale2
 	dq stack_top
 	dq 0
 	dq 0
@@ -76,8 +77,8 @@ global _start:function (_start.end - _start)
 _start:
 	mov esp, stack_top
 
-        extern kmain
-        call kmain
+        extern boot_multiboot
+        call boot_multiboot
 
 	cli
 .hang:

@@ -29,4 +29,4 @@ _start:
 	sub r1, r1, r0
 	bl bzero					/* clear .bss section */
 
-	bl kmain
+	bl arch_init

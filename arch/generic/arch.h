@@ -18,7 +18,7 @@
 #ifndef _GENERIC_ARCH_H_
 # define _GENERIC_ARCH_H_ 1
 
-void            arch_init(void);
+void            kmain(void);
 void            debug_puts(const char *);
 void            debug_putchar(char);
 

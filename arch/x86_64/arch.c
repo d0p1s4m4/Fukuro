@@ -35,18 +35,14 @@ struct stivale2_header stivale2hdr = {
 };
 
 void
-arch_init(void)
-{
-	greeting_screen();
-}
-
-void
 _start(struct stivale2_struct *data)
 {
 	serial_init(COM1);
 
 	LOG(INFO, "Boot protocol: Stivale2");
 	LOG(INFO, "Bootloader: %s", data->bootloader_brand);
+
+	greeting_screen();
 
 	kmain();
 

@@ -40,7 +40,7 @@ master:
 	bl bzero					/* clear .bss section */
 
 	/* start kernel */
-	bl kmain
+	bl arch_init
 
 	b proc_hang
 
