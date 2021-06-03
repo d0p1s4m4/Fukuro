@@ -1,0 +1,6 @@
+<map id="arch/x86_64/include/machine" name="arch/x86_64/include/machine">
+<area shape="rect" id="node1" href="dir_b78ac2ed9399f82d944e4688a0a8093c.html" title="machine" alt="" coords="27,52,99,100"/>
+<area shape="rect" id="node2" href="dir_33f5e7db3cf9e784015fa8b68c8684e8.html" title="generic" alt="" coords="27,148,99,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000013_000009.html" title="1" alt="" coords="67,122,75,137"/>
+<area shape="rect" id="clust1" href="dir_607129271d960798f61db932c43ebb76.html" title="include" alt="" coords="16,16,109,111"/>
+</map>
