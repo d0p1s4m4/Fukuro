@@ -2,9 +2,19 @@
 
 # Global config
 ARCH	?= i686
-CC	= $(ARCH)-elf-gcc
-AS	= $(ARCH)-elf-as
+
+ifeq ($(TOOLCHAIN), llvm)
+CC		= clang -target $(ARCH)-elf
+AS		= $(CC)
+LD		= ld.lld
+OBJCOPY	= llvm-objcopy
+else
+CC		= $(ARCH)-elf-gcc
+AS		= $(ARCH)-elf-as
+LD		= $(ARCH)-elf-ld
 OBJCOPY	= $(ARCH)-elf-objcopy
+endif
+
 RM	= rm -rf
 SPARSE	= sparse
 ifeq ($(C),)
@@ -20,7 +30,7 @@ CFLAGS	= -ansi -pedantic -pedantic-errors -Wall -Werror -Wextra \
 		-DVERSION="\"$(VERSION)\"" -DCOMMIT="\"$(COMMIT)\"" \
 		-Wno-variadic-macros
 ASFLAGS	=
-LDFLAGS	= -T arch/$(ARCH)/linker.ld -ffreestanding -nostdlib
+LDFLAGS	= -T arch/$(ARCH)/linker.ld -nostdlib
 
 KERNEL	= kernel.elf
 
@@ -57,7 +67,7 @@ test: $(OBJS_TEST)
 	./$@
 
 $(KERNEL): $(OBJS)
-	$(CC) $(LDFLAGS) -o $@ $^
+	$(LD) $(LDFLAGS) -o $@ $^
 
 %.s.o: %.s
 	$(AS) $(ASFLAGS) -o $@ $<
