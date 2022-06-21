@@ -41,7 +41,8 @@ serial_is_buffer_empty(uint16_t port)
 void
 serial_write(uint16_t port, uint8_t data)
 {
-	while (serial_is_buffer_empty(port) == 0);
+	while (serial_is_buffer_empty(port) == 0)
+		;;
 	outb(port, data);
 }
 
@@ -54,7 +55,8 @@ serial_received(uint16_t port)
 uint8_t
 serial_read(uint16_t port)
 {
-	while (serial_received(port) == 0);
+	while (serial_received(port) == 0)
+		;;
 	return (inb(port));
 }
 
@@ -62,7 +64,9 @@ void
 debug_puts(const char *str)
 {
 	while (*str != '\0')
+	{
 		serial_write(COM1, *str++);
+	}
 }
 
 void

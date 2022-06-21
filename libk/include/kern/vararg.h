@@ -23,4 +23,4 @@
 # define va_end(v) __builtin_va_end(v)
 # define va_arg(v, a) __builtin_va_arg(v, a)
 
-#endif							/* !_VARARG_LOGGER_H_ */
+#endif /* !_VARARG_LOGGER_H_ */

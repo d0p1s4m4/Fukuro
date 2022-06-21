@@ -32,8 +32,8 @@
 # define PIC_MASTER_OFFSET	0x20
 # define PIC_SLAVE_OFFSET	0xA0
 
-void            pic_remap(void);
-void            pic_send_end_of_interrupt(uint8_t irq);
-void            pic_disable(void);
+void pic_remap(void);
+void pic_send_end_of_interrupt(uint8_t irq);
+void pic_disable(void);
 
-#endif							/* !_I686_PIC_H_ */
+#endif /* !_I686_PIC_H_ */

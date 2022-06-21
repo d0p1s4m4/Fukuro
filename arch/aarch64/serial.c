@@ -26,13 +26,15 @@ serial_init(void)
 void
 serial_write(uint8_t c)
 {
-	while (mmio_read(UART0_FR) & 0x20);
+	while (mmio_read(UART0_FR) & 0x20)
+		;;
 	mmio_write(UART0_DR, c);
 }
 
 uint8_t
 serial_read(void)
 {
-	while (mmio_read(UART0_FR) & 0x10);
+	while (mmio_read(UART0_FR) & 0x10)
+		;;
 	return (mmio_read(UART0_DR));
 }

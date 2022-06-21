@@ -22,13 +22,13 @@
 #define VGA_HEIGHT 25
 
 static uint16_t *vram = (void *) 0xB8000;
-static uint8_t  vga_x = 0;
-static uint8_t  vga_y = 0;
+static uint8_t vga_x = 0;
+static uint8_t vga_y = 0;
 
 void
 vga_putchar(char c, uint8_t fg, uint8_t bg)
 {
-	uint8_t         color;
+	uint8_t color;
 
 	if (c == '\n')
 	{
@@ -46,7 +46,7 @@ vga_putchar(char c, uint8_t fg, uint8_t bg)
 void
 vga_puts(const char *str, uint8_t fg, uint8_t bg)
 {
-	const char     *s;
+	const char *s;
 
 	for (s = str; *s != '\0'; s++)
 		vga_putchar(*s, fg, bg);
@@ -57,8 +57,8 @@ vga_puts(const char *str, uint8_t fg, uint8_t bg)
 void
 vga_clear(void)
 {
-	int             w;
-	int             h;
+	int w;
+	int h;
 
 	for (h = 0; h < VGA_HEIGHT; h++)
 	{

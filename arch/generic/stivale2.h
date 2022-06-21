@@ -3,10 +3,10 @@
 
 struct stivale2_header
 {
-	uint64_t        entry_point;
-	uint64_t        stack;
-	uint64_t        flags;
-	uint64_t        tags;
+	uint64_t entry_point;
+	uint64_t stack;
+	uint64_t flags;
+	uint64_t tags;
 } __attribute__((packed));
 
 struct stivale2_struct
@@ -17,4 +17,4 @@ struct stivale2_struct
 	uint64_t tags;
 } __attribute__((packed));
 
-#endif							/* !_GENERIC_STIVALE2_H_ */
+#endif /* !_GENERIC_STIVALE2_H_ */

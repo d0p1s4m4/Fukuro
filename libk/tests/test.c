@@ -15,10 +15,10 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-int             strlen_group_tests(void);
-int             strrev_group_tests(void);
-int             itoa_group_tests(void);
-int             memset_group_tests(void);
+int strlen_group_tests(void);
+int strrev_group_tests(void);
+int itoa_group_tests(void);
+int memset_group_tests(void);
 
 /*
  * required by logger.c 
@@ -26,7 +26,7 @@ int             memset_group_tests(void);
 void
 debug_puts(const char *str)
 {
-	(void) str;
+	(void)str;
 }
 
 /*
@@ -35,13 +35,13 @@ debug_puts(const char *str)
 void
 debug_putchar(const char c)
 {
-	(void) c;
+	(void)c;
 }
 
 int
 main(void)
 {
-	int             result;
+	int result;
 
 	result = 0;
 	result |= strlen_group_tests();

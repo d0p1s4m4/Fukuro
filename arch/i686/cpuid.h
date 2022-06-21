@@ -24,6 +24,6 @@
 # define cpuid(in, a, b, c, d) __asm__( \
     "cpuid": "=a"(a), "=b"(b), "=c"(c), "=d"(d) : "a"(in))
 
-void            cpuid_dump_info(void);
+void cpuid_dump_info(void);
 
-#endif							/* !_X86_64_CPUID_H_ */
+#endif /* !_X86_64_CPUID_H_ */

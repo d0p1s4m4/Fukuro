@@ -25,15 +25,15 @@ uint32_t        g_mmio_base;
 static void
 detect_rpi_board(void)
 {
-	uint32_t        value;
+	uint32_t value;
 
 	__asm__ volatile ("mrs %0, midr_el1":"=r" (value));
 
 	g_board = (value >> 4) & 0xFFF;
 	switch (g_board)
 	{
-	 case RPI2:				/* RPI 2 */
-	 case RPI3:				/* RPI 3 */
+	 case RPI2: /* RPI 2 */
+	 case RPI3: /* RPI 3 */
 		 g_mmio_base = 0x3F000000;
 		 break;
 	 case RPI4:
@@ -49,7 +49,9 @@ void
 debug_puts(const char *str)
 {
 	while (*str != '\0')
+	{
 		serial_write(*str++);
+	}
 }
 
 void

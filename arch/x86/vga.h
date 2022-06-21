@@ -35,8 +35,8 @@
 # define VGA_COLOR_YELLOW 0xE
 # define VGA_COLOR_WHITE 0xF
 
-void            vga_puts(const char *, uint8_t, uint8_t);
-void            vga_putchar(char, uint8_t, uint8_t);
-void            vga_clear(void);
+void vga_puts(const char *, uint8_t, uint8_t);
+void vga_putchar(char, uint8_t, uint8_t);
+void vga_clear(void);
 
-#endif							/* !_I686_VGA_H_ */
+#endif /* !_I686_VGA_H_ */

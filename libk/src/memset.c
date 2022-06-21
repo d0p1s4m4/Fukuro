@@ -20,7 +20,7 @@
 void *
 memset(void *dest, int value, unsigned int length)
 {
-	char           *ptr;
+	char *ptr;
 
 	ptr = (char *) dest;
 	while (length--)

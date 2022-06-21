@@ -19,7 +19,7 @@
 #include "gdt.h"
 
 static struct gdt_entry gdt_entries[5];
-static struct gdt_ptr  gdt_ptr;
+static struct gdt_ptr gdt_ptr;
 
 static void
 gdt_set_table(struct gdt_entry *table, uint32_t base, uint32_t limit,

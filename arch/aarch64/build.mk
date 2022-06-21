@@ -1,5 +1,6 @@
 # overwrite main makefile config
 CFLAGS += -mgeneral-regs-only
+ASFLAGS += -c $(CFLAGS)
 
 ARCH_ASM_SRCS	= boot.s utils.s
 ARCH_C_SRCS	= arch.c serial.c

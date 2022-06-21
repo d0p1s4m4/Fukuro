@@ -20,9 +20,9 @@
 char *
 strrev(char *str)
 {
-	int             start;
-	int             end;
-	char            tmp;
+	int start;
+	int end;
+	char tmp;
 
 	end = strlen(str) - 1;
 	start = 0;

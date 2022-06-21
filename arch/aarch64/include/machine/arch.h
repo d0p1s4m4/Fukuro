@@ -21,8 +21,8 @@
 # include <generic/arch.h>
 # include <machine/types.h>
 
-extern void     mmio_write(uint32_t, uint32_t);
+extern void mmio_write(uint32_t, uint32_t);
 extern uint32_t mmio_read(uint32_t);
-extern void     delay_cycles(uint32_t);
+extern void delay_cycles(uint32_t);
 
-#endif							/* !_MACHINE_ARCH_H_ */
+#endif /* !_MACHINE_ARCH_H_ */
