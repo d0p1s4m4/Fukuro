@@ -59,4 +59,4 @@
 extern uint32_t	g_mmio_base;
 extern uint16_t	g_board;
 
-#endif							/* !_AARCH64_RPI_H_ */
+#endif /* !_AARCH64_RPI_H_ */

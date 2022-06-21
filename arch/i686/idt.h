@@ -20,20 +20,20 @@
 
 struct idt_ptr
 {
-	uint16_t        limit;
-	uint32_t        base;
+	uint16_t limit;
+	uint32_t base;
 } __attribute__((packed));
 
 struct idt_entry
 {
-	uint16_t        base_low;
-	uint16_t        selector;
-	uint8_t         zero;
-	uint8_t         attr;
-	uint16_t        base_high;
+	uint16_t base_low;
+	uint16_t selector;
+	uint8_t zero;
+	uint8_t attr;
+	uint16_t base_high;
 } __attribute__((packed));
 
-void            idt_init(void);
-extern void     idt_flush(uint32_t);
+void idt_init(void);
+extern void idt_flush(uint32_t);
 
-#endif							/* !_I686_IDT_H_ */
+#endif /* !_I686_IDT_H_ */

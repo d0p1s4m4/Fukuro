@@ -26,9 +26,9 @@
 static void
 bzero_test(void **state)
 {
-	char            buff[3] = "ok";
+	char buff[3] = "ok";
 
-	(void) state;
+	(void)state;
 	bzero(buff, 3);
 	assert_memory_equal(buff, "\0\0\0", 3);
 }
@@ -36,9 +36,9 @@ bzero_test(void **state)
 static void
 memset_test(void **state)
 {
-	char            buff[5];
+	char buff[5];
 
-	(void) state;
+	(void)state;
 	assert_ptr_equal(memset(buff, 'a', 5), buff);
 	assert_memory_equal(buff, "aaaaa", 5);
 }

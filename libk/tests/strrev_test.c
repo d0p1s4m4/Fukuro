@@ -26,16 +26,16 @@
 static void
 strrev_test_empty_string(void **state)
 {
-	(void) state;
+	(void)state;
 	assert_string_equal(strrev(""), "");
 }
 
 static void
 strrev_test_fixed_length_strings(void **state)
 {
-	char            buff[] = "abc";
+	char buff[] = "abc";
 
-	(void) state;
+	(void)state;
 	assert_string_equal(strrev(buff), "cba");
 }
 

@@ -26,36 +26,36 @@
 static void
 itoa_test_hex_deadbeef(void **state)
 {
-	char            buff[7];
+	char buff[7];
 
-	(void) state;
+	(void)state;
 	assert_string_equal(itoa(0xC0FFEE, buff, 16), "C0FFEE");
 }
 
 static void
 itoa_test_hex_f(void **state)
 {
-	char            buff[2];
+	char buff[2];
 
-	(void) state;
+	(void)state;
 	assert_string_equal(itoa(0xF, buff, 16), "F");
 }
 
 static void
 itoa_test_binary_2(void **state)
 {
-	char            buff[3];
+	char buff[3];
 
-	(void) state;
+	(void)state;
 	assert_string_equal(itoa(2, buff, 2), "10");
 }
 
 static void
 itoa_test_42(void **state)
 {
-	char            buff[3];
+	char buff[3];
 
-	(void) state;
+	(void)state;
 	assert_string_equal(itoa(42, buff, 10), "42");
 }
 

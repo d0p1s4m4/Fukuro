@@ -23,8 +23,8 @@
 # define COM3 0x3E8
 # define COM4 0x2E8
 
-void            serial_init(uint16_t);
-void            serial_write(uint16_t, uint8_t);
-uint8_t         serial_read(uint16_t);
+void serial_init(uint16_t);
+void serial_write(uint16_t, uint8_t);
+uint8_t serial_read(uint16_t);
 
-#endif							/* !_X86_64_SERIAL_H */
+#endif /* !_X86_64_SERIAL_H */

@@ -21,4 +21,4 @@
 # include <generic/arch.h>
 # include <machine/types.h>
 
-#endif							/* !_MACHINE_ARCH_H_ */
+#endif /* !_MACHINE_ARCH_H_ */

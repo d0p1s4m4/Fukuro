@@ -10,7 +10,7 @@ LD		= ld.lld
 OBJCOPY	= llvm-objcopy
 else
 CC		= $(ARCH)-elf-gcc
-AS		= $(ARCH)-elf-as
+AS		= $(CC)
 LD		= $(ARCH)-elf-ld
 OBJCOPY	= $(ARCH)-elf-objcopy
 endif
@@ -69,7 +69,7 @@ test: $(OBJS_TEST)
 $(KERNEL): $(OBJS)
 	$(LD) $(LDFLAGS) -o $@ $^
 
-%.s.o: %.s
+%.s.o: %.S
 	$(AS) $(ASFLAGS) -o $@ $<
 
 %.o: %.c

@@ -15,32 +15,19 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include <kern/string.h>
+.globl mmio_write
+mmio_write:
+	str w1, [x0]
+	ret
 
-.section ".text.boot"
+.globl mmio_read
+mmio_read:
+	ldr w0, [x0]
+	ret
 
-.extern kmain
-
-.globl _start
-_start:
-	mrs x0, mpidr_el1			/* read multiprocessor affinity reg */
-	and x0, x0, #3				/* check if core 0 otherwhise hang */
-	cbz x0, master
-proc_hang:
-	b proc_hang
-
-master:
-	/* set stack before code */
-	ldr x1, =_start
-	mov sp, x1
-
-	ldr x0, =bss_begin
-	ldr x1, =bss_end
-	sub x1, x1, x0
-	bl bzero					/* clear .bss section */
-
-	/* start kernel */
-	bl arch_init
-
-	b proc_hang
+.globl delay_cycles
+delay_cycles:
+	subs x0, x0, #1
+	bne delay_cycles
+	ret
 

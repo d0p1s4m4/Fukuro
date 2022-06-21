@@ -15,19 +15,17 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-.globl mmio_write
-mmio_write:
-        str w1, [x0]
-        ret
+#include <kern/string.h>
 
-.globl mmio_read
-mmio_read:
-        ldr w0, [x0]
-        ret
+.section ".text.boot"
 
-.globl delay_cycles
-delay_cycles:
-	subs x0, x0, #1
-	bne delay_cycles
-	ret
+.extern kmain
 
+.globl _start
+_start:
+	ldr r0, =(bss_begin)
+	ldr r1, =(bss_end)
+	sub r1, r1, r0
+	bl bzero /* clear .bss section */
+
+	bl arch_init

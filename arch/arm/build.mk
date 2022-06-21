@@ -1,6 +1,7 @@
 # overwrite main makefile config
 CC	= arm-none-eabi-gcc
-AS	= arm-none-eabi-as
+AS	= $(CC)
+LD	= arm-none-eabi-ld
 
 CFLAGS	+= -mcpu=cortex-a7 -fpic
 

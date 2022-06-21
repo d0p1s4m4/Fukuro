@@ -25,7 +25,7 @@ SECTIONS
     bss_begin = .;
     .bss :
     {
-            *(.bss*)
+        *(.bss*)
     }
     bss_end = .;
 }

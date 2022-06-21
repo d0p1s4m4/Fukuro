@@ -27,8 +27,8 @@ pic_wait(void)
 void
 pic_remap(void)
 {
-	uint8_t         a1;
-	uint8_t         a2;
+	uint8_t a1;
+	uint8_t a2;
 
 	a1 = inb(PIC_MASTER_DATA);
 	a2 = inb(PIC_SLAVE_DATA);
@@ -59,7 +59,9 @@ void
 pic_send_end_of_interrupt(uint8_t irq)
 {
 	if (irq >= 8)
+	{
 		outb(PIC_SLAVE_CMD, PIC_CMD_EOI);
+	}
 	outb(PIC_MASTER_CMD, PIC_CMD_EOI);
 }
 

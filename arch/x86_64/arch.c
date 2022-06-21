@@ -21,10 +21,10 @@
 #include <generic/stivale2.h>
 #include <kern/logger.h>
 
-void	kmain(void);
-void	_start(struct stivale2_struct *data);
+void kmain(void);
+void _start(struct stivale2_struct *data);
 
-static char     stack[4096] = { 0 };
+static char stack[4096] = { 0 };
 
 __attribute__((section(".stivale2hdr"), used))
 struct stivale2_header stivale2hdr = {

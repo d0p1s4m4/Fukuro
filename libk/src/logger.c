@@ -27,7 +27,7 @@ static const char *LOG_LEVEL_STR[] = {
 static void
 debug_print_int(int number, int base)
 {
-	char            buff[6];	/* 99 999 */
+	char buff[6]; /* 99 999 */
 
 	itoa(number, buff, base);
 	debug_puts(buff);
@@ -36,7 +36,7 @@ debug_print_int(int number, int base)
 void
 __log(int level, const char *file, uint16_t line, const char *msg, ...)
 {
-	va_list         args;
+	va_list args;
 
 	debug_puts(file);
 	debug_putchar(':');

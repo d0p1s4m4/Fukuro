@@ -26,14 +26,14 @@
 static void
 strlen_test_empty_string(void **state)
 {
-	(void) state;
+	(void)state;
 	assert_int_equal(strlen(""), 0);
 }
 
 static void
 strlen_test_fixed_length_strings(void **state)
 {
-	(void) state;
+	(void)state;
 	assert_int_equal(strlen("a"), 1);
 	assert_int_equal(strlen("abcd"), 4);
 }

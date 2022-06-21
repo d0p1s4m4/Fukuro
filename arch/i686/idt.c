@@ -26,7 +26,7 @@ static struct idt_entry idt[256];
 static void
 idt_set_table(uint8_t idx, uint16_t selector, uint8_t attr)
 {
-	uint32_t        base;
+	uint32_t base;
 
 	base = isr_list[idx];
 	idt[idx].base_low = base & 0xFFFF;

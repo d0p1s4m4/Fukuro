@@ -32,6 +32,6 @@ enum log_level {
 #  define LOG(level, msg, ...)
 # endif							/* !NDEBUG */
 
-void            __log(int, const char *, uint16_t, const char *, ...);
+void __log(int, const char *, uint16_t, const char *, ...);
 
-#endif							/* !_KERN_LOGGER_H_ */
+#endif /* !_KERN_LOGGER_H_ */

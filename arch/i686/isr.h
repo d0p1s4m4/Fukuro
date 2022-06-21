@@ -20,14 +20,14 @@
 
 struct registers
 {
-	uint32_t        ds;
-	uint32_t        edi, esi, ebp, esp, ebx, edx, ecx, eax;
-	uint32_t        int_number, error;
-	uint32_t        eip, cs, eflags, userresp, ss;
+	uint32_t ds;
+	uint32_t edi, esi, ebp, esp, ebx, edx, ecx, eax;
+	uint32_t int_number, error;
+	uint32_t eip, cs, eflags, userresp, ss;
 };
 
 extern uint32_t isr_list[];
 
-void            isr_handler(struct registers);
+void isr_handler(struct registers);
 
-#endif							/* !_I686_ISR_H_ */
+#endif /* !_I686_ISR_H_ */

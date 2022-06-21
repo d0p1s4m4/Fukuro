@@ -24,8 +24,8 @@ greeting_screen(void)
 		"This is free software: you are free to change and redistribute it. \n"
 		"There is NO WARRANTY, to the extent permitted by law.\n";
 
-	uint8_t         logo_color;
-	int             idx;
+	uint8_t logo_color;
+	int idx;
 
 	vga_clear();
 	logo_color = VGA_COLOR_LIGHT_BLUE;
