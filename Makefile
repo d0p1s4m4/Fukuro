@@ -25,7 +25,7 @@ VERSION	= $$(cat VERSION)
 COMMIT = $$(git rev-parse --short HEAD)
 
 CFLAGS	= -ansi -pedantic -pedantic-errors -Wall -Werror -Wextra \
-		-ffreestanding -fno-builtin -nostdlib -nostdinc -O2 \
+		-ffreestanding -fno-builtin -nostdlib -O2 \
 		-Iarch/$(ARCH)/include -Iarch -Ilibk/include \
 		-DVERSION="\"$(VERSION)\"" -DCOMMIT="\"$(COMMIT)\"" \
 		-Wno-variadic-macros

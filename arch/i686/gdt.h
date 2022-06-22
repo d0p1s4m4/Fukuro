@@ -18,8 +18,6 @@
 #ifndef _I686_GDT_H_
 # define _I686_GDT_H_ 1
 
-# include <machine/types.h>
-
 struct gdt_ptr {
 	uint16_t limit;
 	uint32_t base;

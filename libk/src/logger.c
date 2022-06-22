@@ -16,7 +16,7 @@
  */
 
 #include <machine/arch.h>
-#include <kern/vararg.h>
+#include <stdarg.h>
 #include <kern/logger.h>
 #include <kern/string.h>
 
