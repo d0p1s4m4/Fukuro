@@ -1,0 +1,10 @@
+-ansi
+-pedantic
+-pedantic-errors
+-Wall
+-Werror
+-Wextra
+-fno-builtin
+-Wno-variadic-macros
+-Dinline=__inline__
+-Isrc/lib

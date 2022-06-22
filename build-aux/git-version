@@ -1,0 +1,20 @@
+#!/bin/sh
+
+v=`git describe --abbrev=4 --match='v[0-9]*' HEAD 2>/dev/null`
+
+if [ ! -n "$v" ]
+then
+	v="0.0"
+fi
+
+c=`git rev-parse --short HEAD`
+
+v="${v}-${c}"
+
+s=`git status`
+if [ -n "$s" ]
+then
+	v="${v}-dirty"
+fi
+
+echo "$v" | tr -d '\012'

@@ -25,7 +25,7 @@ jobs:
         key: toolchain-${{ matrix.arch }}
 
     - name: Build toolchain ${{ matrix.arch }}
-      run: ARCH=${{ matrix.arch }} ./scripts/build_toolchain.sh
+      run: ARCH=${{ matrix.arch }} ./tools/build_toolchain.sh
 
     - name: Build Fukuro ${{ matrix.arch }}
       run: ARCH=${{ matrix.arch }} make

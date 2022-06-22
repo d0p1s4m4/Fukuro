@@ -1,0 +1,22 @@
+menu "x86 architecture"
+    depends on X86
+
+    config ARCH
+        string
+        default "x86"
+
+    config 64BIT
+        bool
+        prompt "64 Bit"
+        default n
+    
+    config SMP
+        bool
+        prompt "SMP"
+        default n
+    
+    config PAE
+        bool
+        prompt "PAE"
+        default n
+endmenu

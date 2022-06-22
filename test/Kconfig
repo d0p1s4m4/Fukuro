@@ -1,0 +1,7 @@
+menu "Test"
+
+config WITH_COVERAGE
+	bool "With code coverage"
+	default y
+
+endmenu
