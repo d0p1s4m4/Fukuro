@@ -1,0 +1,2 @@
+fukuro_SOURCES += \
+    arm/boot.S

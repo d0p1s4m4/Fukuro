@@ -1,0 +1,4 @@
+fdos_SOURCES = \
+    fdos-src/main.c
+
+exec_server_PROGRAMS += fdos

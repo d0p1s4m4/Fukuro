@@ -1,0 +1,5 @@
+AM_CONDITIONAL([HOST_aarch64], [test "$systype" = "aarch64"])
+AM_CONDITIONAL([HOST_amd64], [test "$systype" = "amd64"])
+AM_CONDITIONAL([HOST_arm], [test "$systype" = "arm"])
+AM_CONDITIONAL([HOST_i686], [test "$systype" = "i686"])
+AM_CONDITIONAL([HOST_riscv], [test "$systype" = "riscv"])

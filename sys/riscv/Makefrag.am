@@ -1,0 +1,4 @@
+fukuro_SOURCES += \
+    riscv/boot.S \
+    riscv/trap.c \
+    riscv/vector.S

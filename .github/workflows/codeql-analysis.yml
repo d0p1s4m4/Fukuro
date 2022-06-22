@@ -26,11 +26,18 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      run: |
+        sudo apt-get update
+        sudo apt-get install build-essential libcmocka-dev
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
+
+    - name: Build
+      run: |
+        make test
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
