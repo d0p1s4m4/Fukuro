@@ -19,6 +19,6 @@
 # define _MACHINE_ARCH_H_ 1
 
 # include <generic/arch.h>
-# include <machine/types.h>
+# include <stdint.h>
 
 #endif /* !_MACHINE_ARCH_H_ */

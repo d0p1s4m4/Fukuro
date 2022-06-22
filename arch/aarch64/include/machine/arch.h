@@ -19,7 +19,7 @@
 # define _MACHINE_ARCH_H_ 1
 
 # include <generic/arch.h>
-# include <machine/types.h>
+# include <stdint.h>
 
 extern void mmio_write(uint32_t, uint32_t);
 extern uint32_t mmio_read(uint32_t);

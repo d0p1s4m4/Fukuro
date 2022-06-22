@@ -15,7 +15,7 @@
  *   along with Fukurō.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include <machine/types.h>
+#include <stdint.h>
 #include <kern/string.h>
 #include <kern/logger.h>
 #include "idt.h"

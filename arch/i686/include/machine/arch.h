@@ -19,7 +19,7 @@
 # define _MACHINE_ARCH_H_ 1
 
 # include <generic/arch.h>
-# include <machine/types.h>
+# include <stdint.h>
 
 static __inline__ void
 outb(uint16_t port, uint8_t value)
