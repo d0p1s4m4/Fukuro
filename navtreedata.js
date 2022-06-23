@@ -25,13 +25,14 @@
 var NAVTREE =
 [
   [ "Fukurō", "index.html", [
-    [ "Fukurō (フクロウ)", "index.html#autotoc_md13", null ],
+    [ "Fukurō", "index.html", [
+      [ "Fukurō (フクロウ)", "index.html#autotoc_md13", null ]
+    ] ],
     [ "Fukurō Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", null ],
     [ "Contributing to Fukurō", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
       [ "Code of Conduct", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md3", null ],
       [ "How Can I Contribute?", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4", [
         [ "Reporting Bugs", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md5", [
-          [ "Table Of Contents", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", null ],
           [ "Before Submitting A Bug Report", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md6", null ],
           [ "How Do I Submit A (GOOD) Bug Report?", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7", null ]
         ] ],
@@ -68,7 +69,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"dd/da9/x86_2serial_8h.html#aa3b833ccb2d2fb54a9d3e86d91f30d9f"
+"dd/da9/x86_2serial_8h.html#abbed02672431595364c5dd35809303a6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

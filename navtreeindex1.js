@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"dd/da9/x86_2serial_8h.html#aa3b833ccb2d2fb54a9d3e86d91f30d9f":[4,0,0,4,3,4],
 "dd/da9/x86_2serial_8h.html#abbed02672431595364c5dd35809303a6":[4,0,0,4,3,2],
 "dd/da9/x86_2serial_8h.html#acad48cbdd2cab3a19488a5321fde7240":[4,0,0,4,3,5],
 "dd/da9/x86_2serial_8h.html#acff2885b09c9b5e43e3c1fbceec92576":[4,0,0,4,3,6],
@@ -122,8 +121,8 @@ var NAVTREEINDEX1 =
 "files.html":[4,0],
 "functions.html":[3,2,0],
 "functions_vars.html":[3,2,1],
-"globals.html":[4,1,0,0],
 "globals.html":[4,1,0],
+"globals.html":[4,1,0,0],
 "globals_a.html":[4,1,0,1],
 "globals_b.html":[4,1,0,2],
 "globals_c.html":[4,1,0,3],
@@ -151,6 +150,7 @@ var NAVTREEINDEX1 =
 "globals_w.html":[4,1,0,19],
 "globals_z.html":[4,1,0,20],
 "index.html":[],
-"index.html#autotoc_md13":[0],
+"index.html":[0],
+"index.html#autotoc_md13":[0,0],
 "pages.html":[]
 };
