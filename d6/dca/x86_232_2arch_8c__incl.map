@@ -1,0 +1,11 @@
+<map id="src/kernel/arch/x86/32/arch.c" name="src/kernel/arch/x86/32/arch.c">
+<area shape="rect" id="node1" title=" " alt="" coords="428,5,560,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,116,119"/>
+<area shape="rect" id="node3" href="$dd/da9/x86_2serial_8h.html" title=" " alt="" coords="140,93,227,119"/>
+<area shape="rect" id="node4" href="$df/d76/greeting_8h.html" title=" " alt="" coords="251,93,353,119"/>
+<area shape="rect" id="node5" title=" " alt="" coords="378,93,501,119"/>
+<area shape="rect" id="node6" href="$d5/d4a/gdt_8h.html" title=" " alt="" coords="525,93,575,119"/>
+<area shape="rect" id="node7" href="$d4/d35/idt_8h.html" title=" " alt="" coords="600,93,647,119"/>
+<area shape="rect" id="node8" href="$da/ddd/cpuid_8h.html" title=" " alt="" coords="671,93,733,119"/>
+<area shape="rect" id="node9" href="$dc/d7a/pic_8h.html" title=" " alt="" coords="757,93,807,119"/>
+</map>

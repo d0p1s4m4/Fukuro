@@ -1,8 +1,8 @@
-<map id="arch/i686/isr.c" name="arch/i686/isr.c">
-<area shape="rect" id="node1" title=" " alt="" coords="261,5,364,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,121,107"/>
-<area shape="rect" id="node3" href="$d1/d8c/logger_8h.html" title=" " alt="" coords="146,80,242,107"/>
-<area shape="rect" id="node4" href="$da/d66/string_8h.html" title=" " alt="" coords="266,80,359,107"/>
-<area shape="rect" id="node5" href="$d8/da8/isr_8h.html" title=" " alt="" coords="384,80,431,107"/>
-<area shape="rect" id="node6" href="$dc/d7a/pic_8h.html" title=" " alt="" coords="455,80,504,107"/>
+<map id="src/kernel/arch/x86/32/isr.c" name="src/kernel/arch/x86/32/isr.c">
+<area shape="rect" id="node1" title=" " alt="" coords="194,5,326,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,69,119"/>
+<area shape="rect" id="node3" title=" " alt="" coords="93,93,189,119"/>
+<area shape="rect" id="node4" title=" " alt="" coords="213,93,307,119"/>
+<area shape="rect" id="node5" href="$d8/da8/isr_8h.html" title=" " alt="" coords="331,93,378,119"/>
+<area shape="rect" id="node6" href="$dc/d7a/pic_8h.html" title=" " alt="" coords="402,93,451,119"/>
 </map>

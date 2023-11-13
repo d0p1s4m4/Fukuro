@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Fukurō", "index.html", [
     [ "Fukurō", "index.html", [
-      [ "Fukurō (フクロウ)", "index.html#autotoc_md13", null ]
+      [ "Fukurō (フクロウ)", "index.html#autotoc_md19", null ]
     ] ],
     [ "Fukurō Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", null ],
     [ "Contributing to Fukurō", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
@@ -43,6 +43,21 @@ var NAVTREE =
         [ "C Coding Style", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md11", null ]
       ] ]
     ] ],
+    [ "Credits", "db/d56/md_docs_credits.html", [
+      [ "BRUTAL", "db/d56/md_docs_credits.html#autotoc_md14", null ],
+      [ "cute-engineewing", "db/d56/md_docs_credits.html#autotoc_md15", null ],
+      [ "Minix 3", "db/d56/md_docs_credits.html#autotoc_md16", null ],
+      [ "Albert Hofmann", "db/d56/md_docs_credits.html#autotoc_md17", null ]
+    ] ],
+    [ "Source layout", "d2/d61/md_docs_layout.html", null ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ]
+      ] ]
+    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -57,7 +72,6 @@ var NAVTREE =
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
@@ -69,7 +83,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"dd/da9/x86_2serial_8h.html#abbed02672431595364c5dd35809303a6"
+"de/d21/asm_8h.html#ab898071398b359603a35c202e9c65f3b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

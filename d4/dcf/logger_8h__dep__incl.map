@@ -1,9 +1,4 @@
-<map id="libk/include/kern/logger.h" name="libk/include/kern/logger.h">
-<area shape="rect" id="node1" title=" " alt="" coords="316,5,481,32"/>
-<area shape="rect" id="node2" href="$d8/d8d/cpuid_8c.html" title=" " alt="" coords="5,80,125,107"/>
-<area shape="rect" id="node3" href="$d5/d05/idt_8c.html" title=" " alt="" coords="150,80,253,107"/>
-<area shape="rect" id="node4" href="$d8/d78/isr_8c.html" title=" " alt="" coords="277,80,379,107"/>
-<area shape="rect" id="node5" href="$d4/d37/x86__64_2arch_8c.html" title=" " alt="" coords="404,80,535,107"/>
-<area shape="rect" id="node6" href="$d0/d29/main_8c.html" title=" " alt="" coords="559,80,681,107"/>
-<area shape="rect" id="node7" href="$d1/d22/logger_8c.html" title=" " alt="" coords="705,80,818,107"/>
+<map id="src/lib/fukuro/logger.h" name="src/lib/fukuro/logger.h">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,152,31"/>
+<area shape="rect" id="node2" href="$d1/d22/logger_8c.html" title=" " alt="" coords="5,79,152,104"/>
 </map>

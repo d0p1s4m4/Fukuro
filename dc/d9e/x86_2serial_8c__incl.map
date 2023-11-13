@@ -1,5 +1,5 @@
-<map id="arch/x86/serial.c" name="arch/x86/serial.c">
-<area shape="rect" id="node1" title=" " alt="" coords="57,5,173,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,116,107"/>
-<area shape="rect" id="node3" href="$dd/da9/x86_2serial_8h.html" title=" " alt="" coords="140,80,203,107"/>
+<map id="src/kernel/arch/x86/serial.c" name="src/kernel/arch/x86/serial.c">
+<area shape="rect" id="node1" title=" " alt="" coords="49,5,181,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,116,119"/>
+<area shape="rect" id="node3" href="$dd/da9/x86_2serial_8h.html" title=" " alt="" coords="140,93,203,119"/>
 </map>

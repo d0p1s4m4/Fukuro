@@ -1,4 +1,4 @@
-<map id="arch/arm/arch.c" name="arch/arm/arch.c">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,117,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="6,80,117,107"/>
+<map id="src/kernel/arch/arm/arch.c" name="src/kernel/arch/arm/arch.c">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,140,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="17,93,128,119"/>
 </map>

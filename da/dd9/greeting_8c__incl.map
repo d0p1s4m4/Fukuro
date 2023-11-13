@@ -1,7 +1,7 @@
-<map id="arch/x86/greeting.c" name="arch/x86/greeting.c">
-<area shape="rect" id="node1" title=" " alt="" coords="147,5,278,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,116,107"/>
-<area shape="rect" id="node3" href="$dd/da9/x86_2serial_8h.html" title=" " alt="" coords="140,80,203,107"/>
-<area shape="rect" id="node4" href="$d2/d18/vga_8h.html" title=" " alt="" coords="227,80,281,107"/>
-<area shape="rect" id="node5" href="$df/d76/greeting_8h.html" title=" " alt="" coords="305,80,384,107"/>
+<map id="src/kernel/arch/x86/greeting.c" name="src/kernel/arch/x86/greeting.c">
+<area shape="rect" id="node1" title=" " alt="" coords="147,5,279,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,116,119"/>
+<area shape="rect" id="node3" href="$dd/da9/x86_2serial_8h.html" title=" " alt="" coords="140,93,203,119"/>
+<area shape="rect" id="node4" href="$d2/d18/vga_8h.html" title=" " alt="" coords="227,93,281,119"/>
+<area shape="rect" id="node5" href="$df/d76/greeting_8h.html" title=" " alt="" coords="305,93,384,119"/>
 </map>

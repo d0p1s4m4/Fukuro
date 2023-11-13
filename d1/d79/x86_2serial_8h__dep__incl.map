@@ -1,7 +1,7 @@
-<map id="arch/x86/serial.h" name="arch/x86/serial.h">
-<area shape="rect" id="node1" title=" " alt="" coords="225,5,341,32"/>
-<area shape="rect" id="node2" href="$d8/dff/i686_2arch_8c.html" title=" " alt="" coords="5,80,120,107"/>
-<area shape="rect" id="node3" href="$da/d4d/greeting_8c.html" title=" " alt="" coords="144,80,275,107"/>
-<area shape="rect" id="node4" href="$db/d81/x86_2serial_8c.html" title=" " alt="" coords="299,80,415,107"/>
-<area shape="rect" id="node5" href="$d4/d37/x86__64_2arch_8c.html" title=" " alt="" coords="440,80,571,107"/>
+<map id="src/kernel/arch/x86/serial.h" name="src/kernel/arch/x86/serial.h">
+<area shape="rect" id="node1" title=" " alt="" coords="239,5,371,45"/>
+<area shape="rect" id="node2" href="$d1/d16/x86_232_2arch_8c.html" title=" " alt="" coords="5,93,137,133"/>
+<area shape="rect" id="node3" href="$da/de0/x86_264_2arch_8c.html" title=" " alt="" coords="161,93,293,133"/>
+<area shape="rect" id="node4" href="$da/d4d/greeting_8c.html" title=" " alt="" coords="317,93,449,133"/>
+<area shape="rect" id="node5" href="$db/d81/x86_2serial_8c.html" title=" " alt="" coords="473,93,605,133"/>
 </map>

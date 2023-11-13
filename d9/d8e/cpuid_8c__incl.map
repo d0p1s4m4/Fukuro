@@ -1,6 +1,6 @@
-<map id="arch/i686/cpuid.c" name="arch/i686/cpuid.c">
-<area shape="rect" id="node1" title=" " alt="" coords="134,5,254,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,121,107"/>
-<area shape="rect" id="node3" href="$d1/d8c/logger_8h.html" title=" " alt="" coords="146,80,242,107"/>
-<area shape="rect" id="node4" href="$da/ddd/cpuid_8h.html" title=" " alt="" coords="267,80,329,107"/>
+<map id="src/kernel/arch/x86/32/cpuid.c" name="src/kernel/arch/x86/32/cpuid.c">
+<area shape="rect" id="node1" title=" " alt="" coords="75,5,207,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,69,119"/>
+<area shape="rect" id="node3" title=" " alt="" coords="93,93,189,119"/>
+<area shape="rect" id="node4" href="$da/ddd/cpuid_8h.html" title=" " alt="" coords="214,93,277,119"/>
 </map>

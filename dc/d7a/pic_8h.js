@@ -11,6 +11,6 @@ var pic_8h =
     [ "PIC_SLAVE_DATA", "dc/d7a/pic_8h.html#ac00f174a8ccf1b833665f8e2b29005d1", null ],
     [ "PIC_SLAVE_OFFSET", "dc/d7a/pic_8h.html#a055cc84426ad185ed8f16c1c33b21f3d", null ],
     [ "pic_disable", "dc/d7a/pic_8h.html#a6eaf3be6b606619a9bc3f06c9bd7c12a", null ],
-    [ "pic_remap", "dc/d7a/pic_8h.html#a5823df1f974a11e219267ec98db6e302", null ],
+    [ "pic_remap", "dc/d7a/pic_8h.html#a93d02b1a13a70b936c730007360e8f14", null ],
     [ "pic_send_end_of_interrupt", "dc/d7a/pic_8h.html#a7059518f99816fb3a131747e8cbf222d", null ]
 ];
