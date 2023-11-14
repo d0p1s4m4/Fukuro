@@ -8,6 +8,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/d0p1s4m4/Fukuro?logo=github&style=flat-square)](https://github.com/d0p1s4m4/Fukuro/issues)
 [![Codecov](https://img.shields.io/codecov/c/github/d0p1s4m4/Fukuro?logo=codecov&style=flat-square)](https://codecov.io/gh/d0p1s4m4/Fukuro/)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/d0p1s4m4?style=flat-square&logo=githubsponsors)](https://github.com/sponsors/d0p1s4m4/)
+[![Liberapay receiving](https://img.shields.io/liberapay/receives/d0p1?logo=liberapay&style=flat-square)](https://liberapay.com/d0p1)
 
 
 </div>

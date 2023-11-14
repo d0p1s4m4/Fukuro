@@ -62,6 +62,7 @@ AC_CHECK_PROG([GZIP], [gzip], [gzip])
 AC_CHECK_PROG([QEMU], [qemu-system-$host_cpu], [qemu-system-$host_cpu])
 AC_CHECK_PROG([PYTHON3], [python3], [python3])
 AC_CHECK_PROG([DOXYGEN], [doxygen], [doxygen])
+AC_CHECK_PROG([FIG], [fig], [fig])
 
 AC_C_CONST
 AC_C_INLINE
