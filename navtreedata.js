@@ -50,14 +50,6 @@ var NAVTREE =
       [ "Albert Hofmann", "db/d56/md_docs_credits.html#autotoc_md17", null ]
     ] ],
     [ "Source layout", "d2/d61/md_docs_layout.html", null ],
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ]
-      ] ]
-    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -83,7 +75,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"de/d21/asm_8h.html#ab898071398b359603a35c202e9c65f3b"
+"de/da1/rpi_8h.html#a3aa2b061e51584176008e34385e7ccdb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
