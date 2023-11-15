@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+title: Fukurō
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: d0p1
+    email: contact@d0p1.eu
+    orcid: 'https://orcid.org/0009-0001-8345-4627'
+identifiers:
+  - type: url
+    value: 'https://github.com/d0p1s4m4/Fukuro/releases'
+repository-code: 'https://github.com/d0p1s4m4/Fukuro'
+url: 'https://Fukuro.dev'
+keywords:
+  - Microkernel
+  - Operating System
+license: CECILL-2.1
+version: X.X.X
+date-released: '2023-01-01'
+references:
+  - authors:
+      - family-names: Rashid
+        given-names: Richard
+      - family-names: Tevanian
+        given-names: Avadis
+      - family-names: Young
+        given-names: Michael
+      - family-names: Golub
+        given-names: David
+      - family-names: Baron
+        given-names: Robert
+      - family-names: Black
+        given-names: David
+      - family-names: Bolosky
+        given-names: William
+      - family-names: Chew
+        given-names: Jonathan
+    title: "Machine-Independent Virtual Memory Management for Paged Uniprocessor and
+Multiprocessor Architectures"
+    type: article
