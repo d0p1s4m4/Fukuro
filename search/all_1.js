@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['access_0',['access',['../d8/dc9/structgdt__entry.html#a8b0d6200bc639dd37ff68847a0adde5f',1,'gdt_entry::access()'],['../d5/d4a/gdt_8h.html#a8b0d6200bc639dd37ff68847a0adde5f',1,'access():&#160;gdt.h']]],
-  ['amd_5fmagic_1',['AMD_MAGIC',['../da/ddd/cpuid_8h.html#a45695d0b5255fb29587cef9148529c69',1,'cpuid.h']]],
-  ['arch_2ec_2',['arch.c',['../d6/d2f/arm_2arch_8c.html',1,'(Global Namespace)'],['../d1/d16/x86_232_2arch_8c.html',1,'(Global Namespace)'],['../da/de0/x86_264_2arch_8c.html',1,'(Global Namespace)'],['../d0/d9d/aarch64_2arch_8c.html',1,'(Global Namespace)']]],
-  ['arch_2eh_3',['arch.h',['../d4/d72/aarch64_2include_2machine_2arch_8h.html',1,'(Global Namespace)'],['../d6/d46/arm_2include_2machine_2arch_8h.html',1,'(Global Namespace)'],['../dd/d58/generic_2arch_8h.html',1,'(Global Namespace)'],['../d8/dc4/x86_232_2include_2machine_2arch_8h.html',1,'(Global Namespace)'],['../d9/d5d/x86_264_2include_2machine_2arch_8h.html',1,'(Global Namespace)']]],
-  ['arch_5finit_4',['arch_init',['../d1/d16/x86_232_2arch_8c.html#a42ace81c89978597115689472c5d63e8',1,'arch_init(void):&#160;arch.c'],['../d0/d9d/aarch64_2arch_8c.html#a42ace81c89978597115689472c5d63e8',1,'arch_init(void):&#160;arch.c'],['../d6/d2f/arm_2arch_8c.html#a42ace81c89978597115689472c5d63e8',1,'arch_init(void):&#160;arch.c']]],
-  ['asm_2eh_5',['asm.h',['../de/d21/asm_8h.html',1,'']]],
-  ['attr_6',['attr',['../d4/db1/structidt__entry.html#a28478ea2856f6286899bc90b2c6a1ec4',1,'idt_entry::attr()'],['../d4/d35/idt_8h.html#a28478ea2856f6286899bc90b2c6a1ec4',1,'attr():&#160;idt.h']]]
+  ['_5f_5fattribute_5f_5f_0',['__attribute__',['../d5/d4a/gdt_8h.html#a68040d6370cccf56445a2b5de1d49425',1,'__attribute__((packed)):&#160;asm.h'],['../d4/d35/idt_8h.html#a280c0c4d1ccde2fd517a7951ca937f5b',1,'__attribute__((packed)):&#160;asm.h'],['../da/de0/x86_264_2arch_8c.html#a47955ee276c7a484f7927d6ddd7076b4',1,'__attribute__((section(&quot;.stivale2hdr&quot;), used)):&#160;arch.c'],['../de/d21/asm_8h.html#ab898071398b359603a35c202e9c65f3b',1,'__attribute__((packed)):&#160;asm.h']]],
+  ['_5f_5flog_1',['__log',['../d1/d22/logger_8c.html#a89a128223d78805602f843f84e82a5cb',1,'__log(int level, const char *file, uint16_t line, const char *msg,...):&#160;logger.c'],['../d1/d8c/logger_8h.html#a78c0aa2b6254a9f19aae875f2a0ea6f9',1,'__log(int, const char *, uint16_t, const char *,...):&#160;logger.c']]],
+  ['_5f_5fminilibc_5fmain_2',['__minilibc_main',['../d6/d02/minilibc_8c.html#a3fbae9e8c0d5aedbc5f0a53d058c5766',1,'minilibc.c']]],
+  ['_5fstart_3',['_start',['../da/de0/x86_264_2arch_8c.html#ae42b4d116f71ea6f761462fb2463441b',1,'arch.c']]]
 ];

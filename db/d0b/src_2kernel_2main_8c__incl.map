@@ -1,5 +1,7 @@
 <map id="src/kernel/main.c" name="src/kernel/main.c">
-<area shape="rect" id="node1" title=" " alt="" coords="64,5,185,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,116,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="141,79,237,104"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="63,5,183,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,115,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,33,83,69,79,65,110,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="139,79,234,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,29,168,66,164,69,131,33"/>
 </map>

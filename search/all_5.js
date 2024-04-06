@@ -1,15 +1,8 @@
 var searchData=
 [
-  ['eax_0',['eax',['../df/d94/structregisters.html#a93d929ad1fc57af9d4f1793c361fb4f2',1,'registers']]],
-  ['ebp_1',['ebp',['../df/d94/structregisters.html#aaba2ad0ff8ba480934feabfdab02b1e7',1,'registers']]],
-  ['ebx_2',['ebx',['../df/d94/structregisters.html#ae7c1e3339e4dead200cab41010e9127c',1,'registers']]],
-  ['ecx_3',['ecx',['../df/d94/structregisters.html#af2b16bef95c844028dd145264d1d3875',1,'registers']]],
-  ['edi_4',['edi',['../df/d94/structregisters.html#a36ffab8d34c6c411a7e5205ddb95eaf9',1,'registers']]],
-  ['edx_5',['edx',['../df/d94/structregisters.html#ae6db045cebe7b4cf979120dccdee0d01',1,'registers']]],
-  ['eflags_6',['eflags',['../df/d94/structregisters.html#aeedfc39703ec8e0a1f052a832e74acd3',1,'registers']]],
-  ['eip_7',['eip',['../df/d94/structregisters.html#a1588906901fc3015e0865574669a56a6',1,'registers']]],
-  ['error_8',['error',['../df/d94/structregisters.html#aa8d183302fdfa4a6892f1d80300cdb32',1,'registers']]],
-  ['error_9',['ERROR',['../d1/d8c/logger_8h.html#ac91d55174d383848b976a34de843748ea2fd6f336d08340583bd620a7f5694c90',1,'logger.h']]],
-  ['esi_10',['esi',['../df/d94/structregisters.html#ada78e3124de6adf5a5d212f9ebc4bbe0',1,'registers']]],
-  ['esp_11',['esp',['../df/d94/structregisters.html#a7534a179bc9cc0ef26f0468e0959ee5c',1,'registers']]]
+  ['debug_5fputchar_0',['debug_putchar',['../d0/d9d/aarch64_2arch_8c.html#a98d241bfccd3f2d799cdaac16948eb36',1,'debug_putchar(char c):&#160;arch.c'],['../d6/d2f/arm_2arch_8c.html#a98d241bfccd3f2d799cdaac16948eb36',1,'debug_putchar(char c):&#160;arch.c'],['../dd/d58/generic_2arch_8h.html#a29c1e09f86e90a3a229475f5cb2f020c',1,'debug_putchar(char):&#160;arch.c'],['../db/d81/x86_2serial_8c.html#a98d241bfccd3f2d799cdaac16948eb36',1,'debug_putchar(char c):&#160;serial.c'],['../d8/db9/test_8c.html#a05d08909de96a61761200daa2e0feedc',1,'debug_putchar(const char c):&#160;test.c']]],
+  ['debug_5fputs_1',['debug_puts',['../d0/d9d/aarch64_2arch_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;arch.c'],['../d6/d2f/arm_2arch_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;arch.c'],['../dd/d58/generic_2arch_8h.html#aab502f2ad3d22c8b9bb9d484ed8149bd',1,'debug_puts(const char *):&#160;arch.c'],['../db/d81/x86_2serial_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;serial.c'],['../d8/db9/test_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;test.c']]],
+  ['delay_5fcycles_2',['delay_cycles',['../d4/d72/aarch64_2include_2machine_2arch_8h.html#a11396a8835a8a6a59e989c55547b4509',1,'arch.h']]],
+  ['do_20i_20submit_20a_20good_20bug_20report_3',['How Do I Submit A (GOOD) Bug Report?',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7',1,'']]],
+  ['ds_4',['ds',['../df/d94/structregisters.html#a6fe20edd854a1a653ae71ccf541a6b8b',1,'registers']]]
 ];

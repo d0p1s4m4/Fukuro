@@ -25,10 +25,10 @@
 var NAVTREE =
 [
   [ "Fukurō", "index.html", [
-    [ "Fukurō", "index.html", [
-      [ "Fukurō (フクロウ)", "index.html#autotoc_md19", null ]
+    [ "Fukurō (フクロウ)", "index.html#autotoc_md19", [
+      [ "License", "index.html#autotoc_md20", null ]
     ] ],
-    [ "Fukurō Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", null ],
+    [ "Fukurō Code of Conduct", "d3/dd7/md__c_o_d_e___o_f___c_o_n_d_u_c_t.html", null ],
     [ "Contributing to Fukurō", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
       [ "Code of Conduct", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md3", null ],
       [ "How Can I Contribute?", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4", [
@@ -43,13 +43,13 @@ var NAVTREE =
         [ "C Coding Style", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md11", null ]
       ] ]
     ] ],
-    [ "Credits", "db/d56/md_docs_credits.html", [
-      [ "BRUTAL", "db/d56/md_docs_credits.html#autotoc_md14", null ],
-      [ "cute-engineewing", "db/d56/md_docs_credits.html#autotoc_md15", null ],
-      [ "Minix 3", "db/d56/md_docs_credits.html#autotoc_md16", null ],
-      [ "Albert Hofmann", "db/d56/md_docs_credits.html#autotoc_md17", null ]
+    [ "Credits", "d2/d17/md_docs_2credits.html", [
+      [ "BRUTAL", "d2/d17/md_docs_2credits.html#autotoc_md14", null ],
+      [ "cute-engineewing", "d2/d17/md_docs_2credits.html#autotoc_md15", null ],
+      [ "Minix 3", "d2/d17/md_docs_2credits.html#autotoc_md16", null ],
+      [ "Albert Hofmann", "d2/d17/md_docs_2credits.html#autotoc_md17", null ]
     ] ],
-    [ "Source layout", "d2/d61/md_docs_layout.html", null ],
+    [ "Source layout", "d3/d1d/md_docs_2layout.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],

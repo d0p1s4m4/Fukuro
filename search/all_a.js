@@ -1,10 +1,25 @@
 var searchData=
 [
-  ['layout_2emd_0',['layout.md',['../dc/d94/layout_8md.html',1,'']]],
-  ['limit_1',['limit',['../d7/d4a/structgdt__ptr.html#ab28e82ae69032cb4ad3ec3a0be3d7129',1,'gdt_ptr::limit()'],['../d6/d5c/structidt__ptr.html#ab28e82ae69032cb4ad3ec3a0be3d7129',1,'idt_ptr::limit()'],['../d5/d4a/gdt_8h.html#ab28e82ae69032cb4ad3ec3a0be3d7129',1,'limit():&#160;gdt.h'],['../d4/d35/idt_8h.html#ab28e82ae69032cb4ad3ec3a0be3d7129',1,'limit():&#160;idt.h']]],
-  ['limit_5flow_2',['limit_low',['../d8/dc9/structgdt__entry.html#aa7ae5b5a918e00776ff07fb1c58a348d',1,'gdt_entry::limit_low()'],['../d5/d4a/gdt_8h.html#aa7ae5b5a918e00776ff07fb1c58a348d',1,'limit_low():&#160;gdt.h']]],
-  ['log_3',['LOG',['../d1/d8c/logger_8h.html#acaa1c3fa56061380a29889d703236251',1,'logger.h']]],
-  ['log_5flevel_4',['log_level',['../d1/d8c/logger_8h.html#ac91d55174d383848b976a34de843748e',1,'logger.h']]],
-  ['logger_2ec_5',['logger.c',['../d1/d22/logger_8c.html',1,'']]],
-  ['logger_2eh_6',['logger.h',['../d1/d8c/logger_8h.html',1,'']]]
+  ['i_20contribute_0',['How Can I Contribute?',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4',1,'']]],
+  ['i_20submit_20a_20good_20bug_20report_1',['How Do I Submit A (GOOD) Bug Report?',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7',1,'']]],
+  ['icw1_5ficw4_2',['ICW1_ICW4',['../dc/d7a/pic_8h.html#a964d12193d2b36e8a7ec7fa57438e313',1,'pic.h']]],
+  ['icw1_5finit_3',['ICW1_INIT',['../dc/d7a/pic_8h.html#a286dc251f3d73c08e08a53a4696f31ef',1,'pic.h']]],
+  ['icw4_5f8086_4',['ICW4_8086',['../dc/d7a/pic_8h.html#a42803c5ddcec9e120a6dbf7bc5c1b7af',1,'pic.h']]],
+  ['idt_2ec_5',['idt.c',['../d5/d05/idt_8c.html',1,'']]],
+  ['idt_2eh_6',['idt.h',['../d4/d35/idt_8h.html',1,'']]],
+  ['idt_5fentry_7',['idt_entry',['../d4/db1/structidt__entry.html',1,'']]],
+  ['idt_5fflush_8',['idt_flush',['../d4/d35/idt_8h.html#a6e6a216cea4572c3169c0d11f16d7d01',1,'idt.h']]],
+  ['idt_5finit_9',['idt_init',['../d5/d05/idt_8c.html#a164d38a0163ec2c36993b803b8c7fdcb',1,'idt_init(void):&#160;idt.c'],['../d4/d35/idt_8h.html#a164d38a0163ec2c36993b803b8c7fdcb',1,'idt_init(void):&#160;idt.c']]],
+  ['idt_5fptr_10',['idt_ptr',['../d6/d5c/structidt__ptr.html',1,'']]],
+  ['info_11',['INFO',['../d1/d8c/logger_8h.html#ac91d55174d383848b976a34de843748ea748005382152808a72b1a9177d9dc806',1,'logger.h']]],
+  ['int_5fnumber_12',['int_number',['../df/d94/structregisters.html#a77a413c3ef9e46362d0622cb954ba0ab',1,'registers']]],
+  ['intel_5fmagic_13',['INTEL_MAGIC',['../da/ddd/cpuid_8h.html#a6134af974a82b80c2de8f9f3173d4beb',1,'cpuid.h']]],
+  ['isr_2ec_14',['isr.c',['../d8/d78/isr_8c.html',1,'']]],
+  ['isr_2eh_15',['isr.h',['../d8/da8/isr_8h.html',1,'']]],
+  ['isr_5fhandler_16',['isr_handler',['../d8/d78/isr_8c.html#a9ec41a663410f6463c767b90aeaf5c90',1,'isr_handler(struct registers reg):&#160;isr.c'],['../d8/da8/isr_8h.html#a5551a862ecbf23ce3deafbd822032d96',1,'isr_handler(struct registers):&#160;isr.c']]],
+  ['isr_5flist_17',['isr_list',['../d8/da8/isr_8h.html#a7450ccbca49b621d99c9ff0fddbb3d45',1,'isr.h']]],
+  ['itoa_18',['itoa',['../d9/db3/itoa_8c.html#ae7cc43b48b9dbe7f30e5dce910ec7bcb',1,'itoa(int number, char *buffer, int base):&#160;itoa.c'],['../d9/dab/src_2lib_2minic_2string_8h.html#a1caf09304413b9db1f50ecfc9314a8ae',1,'itoa(int, char *, int):&#160;itoa.c']]],
+  ['itoa_2ec_19',['itoa.c',['../d9/db3/itoa_8c.html',1,'']]],
+  ['itoa_5fgroup_5ftests_20',['itoa_group_tests',['../d2/dbd/itoa__test_8c.html#a882afd7a4ecdb6574c4125a38f64bb93',1,'itoa_group_tests(void):&#160;itoa_test.c'],['../d8/db9/test_8c.html#a882afd7a4ecdb6574c4125a38f64bb93',1,'itoa_group_tests(void):&#160;itoa_test.c']]],
+  ['itoa_5ftest_2ec_21',['itoa_test.c',['../d2/dbd/itoa__test_8c.html',1,'']]]
 ];

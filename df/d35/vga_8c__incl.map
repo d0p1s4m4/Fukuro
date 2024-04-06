@@ -1,5 +1,7 @@
 <map id="src/kernel/arch/x86/vga.c" name="src/kernel/arch/x86/vga.c">
-<area shape="rect" id="node1" title=" " alt="" coords="13,5,145,45"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,93,69,119"/>
-<area shape="rect" id="node3" href="$d2/d18/vga_8h.html" title=" " alt="" coords="93,93,147,119"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,5,143,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,69,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,48,52,81,48,79,65,45"/>
+<area shape="rect" id="Node000003" href="$d2/d18/vga_8h.html" title=" " alt="" coords="92,94,145,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,45,107,79,103,81,85,48"/>
 </map>

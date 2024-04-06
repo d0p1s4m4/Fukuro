@@ -1,7 +1,28 @@
 var searchData=
 [
-  ['debug_5fputchar_0',['debug_putchar',['../d0/d9d/aarch64_2arch_8c.html#a98d241bfccd3f2d799cdaac16948eb36',1,'debug_putchar(char c):&#160;arch.c'],['../d6/d2f/arm_2arch_8c.html#a98d241bfccd3f2d799cdaac16948eb36',1,'debug_putchar(char c):&#160;arch.c'],['../dd/d58/generic_2arch_8h.html#a29c1e09f86e90a3a229475f5cb2f020c',1,'debug_putchar(char):&#160;arch.c'],['../db/d81/x86_2serial_8c.html#a98d241bfccd3f2d799cdaac16948eb36',1,'debug_putchar(char c):&#160;serial.c'],['../d8/db9/test_8c.html#a05d08909de96a61761200daa2e0feedc',1,'debug_putchar(const char c):&#160;test.c']]],
-  ['debug_5fputs_1',['debug_puts',['../d0/d9d/aarch64_2arch_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;arch.c'],['../d6/d2f/arm_2arch_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;arch.c'],['../dd/d58/generic_2arch_8h.html#aab502f2ad3d22c8b9bb9d484ed8149bd',1,'debug_puts(const char *):&#160;arch.c'],['../db/d81/x86_2serial_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;serial.c'],['../d8/db9/test_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;test.c']]],
-  ['delay_5fcycles_2',['delay_cycles',['../d4/d72/aarch64_2include_2machine_2arch_8h.html#a11396a8835a8a6a59e989c55547b4509',1,'arch.h']]],
-  ['ds_3',['ds',['../df/d94/structregisters.html#a6fe20edd854a1a653ae71ccf541a6b8b',1,'registers']]]
+  ['c_20coding_20style_0',['C Coding Style',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md11',1,'']]],
+  ['can_20i_20contribute_1',['How Can I Contribute?',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4',1,'']]],
+  ['code_20contribution_2',['Your First Code Contribution',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md8',1,'']]],
+  ['code_20of_20conduct_3',['code of conduct',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md3',1,'Code of Conduct'],['../d3/dd7/md__c_o_d_e___o_f___c_o_n_d_u_c_t.html',1,'Fukurō Code of Conduct']]],
+  ['code_5fof_5fconduct_2emd_4',['CODE_OF_CONDUCT.md',['../d7/de1/_c_o_d_e___o_f___c_o_n_d_u_c_t_8md.html',1,'']]],
+  ['coding_20style_5',['C Coding Style',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md11',1,'']]],
+  ['com1_6',['COM1',['../dd/da9/x86_2serial_8h.html#a00dbb3ab1c59e14699be9393693e2248',1,'serial.h']]],
+  ['com2_7',['COM2',['../dd/da9/x86_2serial_8h.html#a435e02f194c24c9b0e00d7cd27a1704e',1,'serial.h']]],
+  ['com3_8',['COM3',['../dd/da9/x86_2serial_8h.html#abbed02672431595364c5dd35809303a6',1,'serial.h']]],
+  ['com4_9',['COM4',['../dd/da9/x86_2serial_8h.html#a595cabb01568ba641574d24546d99c6b',1,'serial.h']]],
+  ['commit_20message_10',['Git Commit Message',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md10',1,'']]],
+  ['conduct_11',['conduct',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md3',1,'Code of Conduct'],['../d3/dd7/md__c_o_d_e___o_f___c_o_n_d_u_c_t.html',1,'Fukurō Code of Conduct']]],
+  ['contents_12',['Table Of Contents',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2',1,'']]],
+  ['contribute_13',['How Can I Contribute?',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4',1,'']]],
+  ['contributing_20to_20fukurō_14',['Contributing to Fukurō',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html',1,'']]],
+  ['contributing_2emd_15',['CONTRIBUTING.md',['../d2/da7/_c_o_n_t_r_i_b_u_t_i_n_g_8md.html',1,'']]],
+  ['contribution_16',['Your First Code Contribution',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md8',1,'']]],
+  ['cpuid_17',['cpuid',['../da/ddd/cpuid_8h.html#a9bef8ffcba350206638a1a55a1c1474d',1,'cpuid.h']]],
+  ['cpuid_2ec_18',['cpuid.c',['../d8/d8d/cpuid_8c.html',1,'']]],
+  ['cpuid_2eh_19',['cpuid.h',['../da/ddd/cpuid_8h.html',1,'']]],
+  ['cpuid_5fdump_5finfo_20',['cpuid_dump_info',['../da/ddd/cpuid_8h.html#ae63d91448696f1b6e7ea3f69674795b8',1,'cpuid_dump_info(void):&#160;cpuid.c'],['../d8/d8d/cpuid_8c.html#ae63d91448696f1b6e7ea3f69674795b8',1,'cpuid_dump_info(void):&#160;cpuid.c']]],
+  ['credits_21',['Credits',['../d2/d17/md_docs_2credits.html',1,'']]],
+  ['credits_2emd_22',['credits.md',['../d7/d11/credits_8md.html',1,'']]],
+  ['cs_23',['cs',['../df/d94/structregisters.html#a8519dc239502dfcbac171b3128dc7054',1,'registers']]],
+  ['cute_20engineewing_24',['cute-engineewing',['../d2/d17/md_docs_2credits.html#autotoc_md15',1,'']]]
 ];

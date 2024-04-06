@@ -1,7 +1,8 @@
 <map id="src/kernel/arch/x86/64" name="src/kernel/arch/x86/64">
-<area shape="rect" id="node2" href="dir_bce1689f0a00cbe915d06809d7c78481.html" title="include" alt="" coords="38,63,101,88"/>
-<area shape="rect" id="node3" href="dir_43af151a16def40383bd5358501d5df1.html" title="generic" alt="" coords="37,136,101,161"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000012_000008.html" title="1" alt="" coords="74,110,82,125"/>
-<area shape="rect" id="clust2" href="dir_293121b18e5696e63e2b609df544a979.html" alt="" coords="27,52,175,99"/>
-<area shape="rect" id="clust1" href="dir_b39494742a4b289002c932da1c6725ae.html" title="x86" alt="" coords="16,16,185,109"/>
+<area shape="rect" id="node2" href="dir_bce1689f0a00cbe915d06809d7c78481.html" title="include" alt="" coords="37,63,99,89"/>
+<area shape="rect" id="node3" href="dir_43af151a16def40383bd5358501d5df1.html" title="generic" alt="" coords="36,137,100,162"/>
+<area shape="poly" id="edge1" href="dir_000012_000008.html" alt="" coords="71,89,71,121,65,121,65,89"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000012_000008.html" title="1" alt="" coords="73,111,80,126"/>
+<area shape="rect" id="clust2" href="dir_293121b18e5696e63e2b609df544a979.html" alt="" coords="27,52,172,99"/>
+<area shape="rect" id="clust1" href="dir_b39494742a4b289002c932da1c6725ae.html" title="x86" alt="" coords="16,16,183,110"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="lib/minilibc/string.h" name="lib/minilibc/string.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,135,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="36,79,104,104"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,134,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="36,79,103,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,31,72,63,67,63,67,31"/>
 </map>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['kernel_5ftrap_0',['kernel_trap',['../dc/d6f/trap_8c.html#ab6243dc898246663a9f88d1aca6787d2',1,'trap.c']]],
-  ['kmain_1',['kmain',['../dd/d58/generic_2arch_8h.html#a406c20548822065e144564476378f8a1',1,'kmain(void):&#160;main.c'],['../da/de0/x86_264_2arch_8c.html#a406c20548822065e144564476378f8a1',1,'kmain(void):&#160;main.c'],['../d9/d43/src_2kernel_2main_8c.html#a406c20548822065e144564476378f8a1',1,'kmain(void):&#160;main.c'],['../db/d5c/sys_2main_8c.html#a406c20548822065e144564476378f8a1',1,'kmain(void):&#160;main.c']]]
+  ['hofmann_0',['Albert Hofmann',['../d2/d17/md_docs_2credits.html#autotoc_md17',1,'']]],
+  ['how_20can_20i_20contribute_1',['How Can I Contribute?',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4',1,'']]],
+  ['how_20do_20i_20submit_20a_20good_20bug_20report_2',['How Do I Submit A (GOOD) Bug Report?',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7',1,'']]]
 ];

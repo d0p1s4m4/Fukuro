@@ -1,23 +1,11 @@
 var searchData=
 [
-  ['uart0_5fbase_0',['UART0_BASE',['../de/da1/rpi_8h.html#a7a07348b4332ff6b88abf6092347deba',1,'rpi.h']]],
-  ['uart0_5fcr_1',['UART0_CR',['../de/da1/rpi_8h.html#a35837699c967eb00a86c8b23722986ae',1,'rpi.h']]],
-  ['uart0_5fdmacr_2',['UART0_DMACR',['../de/da1/rpi_8h.html#a90bb2a30298a639f9c99445b8ac6acea',1,'rpi.h']]],
-  ['uart0_5fdr_3',['UART0_DR',['../de/da1/rpi_8h.html#a4bd8785a1ac7d8be53153ec3e2f5afa4',1,'rpi.h']]],
-  ['uart0_5ffbrd_4',['UART0_FBRD',['../de/da1/rpi_8h.html#a67a0db9e9e19efd76dff62e1d8d1a85b',1,'rpi.h']]],
-  ['uart0_5ffr_5',['UART0_FR',['../de/da1/rpi_8h.html#a8838537812346e09a66edf94c0c9ffe9',1,'rpi.h']]],
-  ['uart0_5fibrd_6',['UART0_IBRD',['../de/da1/rpi_8h.html#acad7a12bd2fd52142e84b6789b8b20ec',1,'rpi.h']]],
-  ['uart0_5ficr_7',['UART0_ICR',['../de/da1/rpi_8h.html#aef295b4cdf946f8f3650730affc62715',1,'rpi.h']]],
-  ['uart0_5fifls_8',['UART0_IFLS',['../de/da1/rpi_8h.html#ad72d21130d5a78debe12849c22c284b3',1,'rpi.h']]],
-  ['uart0_5filpr_9',['UART0_ILPR',['../de/da1/rpi_8h.html#ade05b85027deb2f82d7c7fbbde57b28d',1,'rpi.h']]],
-  ['uart0_5fimsc_10',['UART0_IMSC',['../de/da1/rpi_8h.html#a7b6a0c6364685a63b8d9ca71286310b7',1,'rpi.h']]],
-  ['uart0_5fitcr_11',['UART0_ITCR',['../de/da1/rpi_8h.html#a7e2c97363aea1d2326b4e58d5322ca34',1,'rpi.h']]],
-  ['uart0_5fitip_12',['UART0_ITIP',['../de/da1/rpi_8h.html#a9ea4132386a9e24feef20cc060756ab2',1,'rpi.h']]],
-  ['uart0_5fitop_13',['UART0_ITOP',['../de/da1/rpi_8h.html#aac06593802abd8197c7cec6bd5723b13',1,'rpi.h']]],
-  ['uart0_5flcrh_14',['UART0_LCRH',['../de/da1/rpi_8h.html#ac4cc0d28286e1e9d556fd21570a9d092',1,'rpi.h']]],
-  ['uart0_5fmis_15',['UART0_MIS',['../de/da1/rpi_8h.html#a28076085da08563e6cb1173d485cf292',1,'rpi.h']]],
-  ['uart0_5fris_16',['UART0_RIS',['../de/da1/rpi_8h.html#a5ed37185b8685b66d1435cba13d588ce',1,'rpi.h']]],
-  ['uart0_5frsrecr_17',['UART0_RSRECR',['../de/da1/rpi_8h.html#ab8d90d9c03c6bad45512f31cb0f375c7',1,'rpi.h']]],
-  ['uart0_5ftdr_18',['UART0_TDR',['../de/da1/rpi_8h.html#a54288e48e6e63c9b524c64c82c27cbba',1,'rpi.h']]],
-  ['userresp_19',['userresp',['../df/d94/structregisters.html#a27c8f736d15a1e013221ea53d1dde755',1,'registers']]]
+  ['readme_2emd_0',['README.md',['../d9/dd6/_r_e_a_d_m_e_8md.html',1,'']]],
+  ['registers_1',['registers',['../df/d94/structregisters.html',1,'']]],
+  ['report_2',['report',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md6',1,'Before Submitting A Bug Report'],['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7',1,'How Do I Submit A (GOOD) Bug Report?']]],
+  ['reporting_20bugs_3',['Reporting Bugs',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md5',1,'']]],
+  ['rpi_2eh_4',['rpi.h',['../de/da1/rpi_8h.html',1,'']]],
+  ['rpi2_5',['RPI2',['../de/da1/rpi_8h.html#ae63aa8e09a5c876a421986b0688136ad',1,'rpi.h']]],
+  ['rpi3_6',['RPI3',['../de/da1/rpi_8h.html#a777cfbc600522710ba28943593f192b8',1,'rpi.h']]],
+  ['rpi4_7',['RPI4',['../de/da1/rpi_8h.html#a8393fe2a6ff6a8fdcc251591a336065a',1,'rpi.h']]]
 ];

@@ -1,6 +1,9 @@
 <map id="src/kernel/arch/aarch64/arch.c" name="src/kernel/arch/aarch64/arch.c">
-<area shape="rect" id="node1" title=" " alt="" coords="84,5,243,45"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,93,116,119"/>
-<area shape="rect" id="node3" href="$de/da1/rpi_8h.html" title=" " alt="" coords="140,93,187,119"/>
-<area shape="rect" id="node4" href="$d0/d7e/aarch64_2serial_8h.html" title=" " alt="" coords="211,93,273,119"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="83,5,240,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,115,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,49,89,86,86,82,135,44"/>
+<area shape="rect" id="Node000003" href="$de/da1/rpi_8h.html" title=" " alt="" coords="139,94,184,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,46,164,78,159,78,159,46"/>
+<area shape="rect" id="Node000004" href="$d0/d7e/aarch64_2serial_8h.html" title=" " alt="" coords="208,94,270,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,45,218,81,214,84,179,48"/>
 </map>
