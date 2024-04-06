@@ -20,3 +20,12 @@ Fukurō aims to be a highly portable microkernel
 ![fukuro i686](.github/screen/fukuro_vbox.png)
 
 </div>
+
+
+## License
+
+<img src="https://opensource.org/wp-content/themes/osi/assets/img/osi-badge-light.svg" align="right" height="128px" alt="OSI Approved License">
+
+Fukuro is dual-licensed under the CeCILL and GPLv3 License.
+
+The full text of the license can be accessed via [this link](https://cecill.info/licences/Licence_CeCILL_V2.1-fr.txt) and is also included in [the license file](LICENSE) of this software package.
