@@ -28,4 +28,4 @@ Fukurō aims to be a highly portable microkernel
 
 Fukuro is dual-licensed under the CeCILL and GPLv3 License.
 
-The full text of the license can be accessed via [this link](https://cecill.info/licences/Licence_CeCILL_V2.1-fr.txt) and is also included in [the license file](LICENSE) of this software package.
+The full text of the license can be accessed via [this link](https://cecill.info/licences/Licence_CeCILL_V2.1-fr.txt) and is also included in [the license file](./LICENSE) of this software package.
