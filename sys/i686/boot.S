@@ -1,5 +1,5 @@
 /*
- * Copyright © 2023, d0p1
+ * Copyright © 2024, d0p1
  *
  * This file is part of Fukurō.
  *
@@ -29,79 +29,67 @@
  * The fact that you are presently reading this means that you have had
  * knowledge of the CeCILL license and that you accept its terms.
  */
-	.section ".text"
+
+#include <sys/multiboot.h>
+
+	.section .text.boot
+
+#define MULTIBOOT_FLAGS (MULTIBOOT_PAGE_ALIGN \
+						| MULTIBOOT_MEMORY_INFO \
+						| MULTIBOOT_VIDEO)
+
+#define MULTIBOOT_CHECKSUM -(MULTIBOOT_HEADER_MAGIC + MULTIBOOT_FLAGS)
+
+#define FRAMEBUFFER_WIDTH  1024
+#define FRAMEBUFFER_HEIGHT 768
+#define FRAMEBUFFER_BPP    32 
+
 	.align 4
+	.long MULTIBOOT_HEADER_MAGIC
+	.long MULTIBOOT_FLAGS
+	.long MULTIBOOT_CHECKSUM
 
-	.extern kernel_trap
+	.long 0x0
+	.long 0x0
+	.long 0x0
+	.long 0x0
+	.long 0x0
 
-	.globl kernel_vec
-kernel_vec:
-	addi sp, sp, -4 * 31
+	/* framebuffer */
+	.long 0x0
+	.long FRAMEBUFFER_WIDTH
+	.long FRAMEBUFFER_HEIGHT
+	.long FRAMEBUFFER_BPP
 
-	sw ra, 0(sp)
-	sw sp, 4 * 1(sp)
-	sw gp, 4 * 2(sp)
-	sw tp, 4 * 3(sp)
-	sw t0, 4 * 5(sp)
-	sw t1, 4 * 6(sp)
-	sw t2, 4 * 7(sp)
-	sw s0, 4 * 8(sp)
-	sw s1, 4 * 9(sp)
-	sw a0, 4 * 10(sp)
-	sw a1, 4 * 11(sp)
-	sw a2, 4 * 12(sp)
-	sw a3, 4 * 13(sp)
-	sw a4, 4 * 14(sp)
-	sw a5, 4 * 15(sp)
-	sw a6, 4 * 16(sp)
-	sw a7, 4 * 17(sp)
-	sw s2, 4 * 18(sp)
-	sw s3, 4 * 19(sp)
-	sw s4, 4 * 20(sp)
-	sw s5, 4 * 21(sp)
-	sw s6, 4 * 22(sp)
-	sw s7, 4 * 23(sp)
-	sw s8, 4 * 24(sp)
-	sw s9, 4 * 25(sp)
-	sw s10, 4 * 26(sp)
-	sw s11, 4 * 27(sp)
-	sw t3, 4 * 28(sp)
-	sw t4, 4 * 29(sp)
-	sw t5, 4 * 30(sp)
+	.section .bss
+	.align 16
+stack_bottom:
+	.skip 4096
+stack_top:
 
-	call kernel_trap
+	.section .text
+	.globl _entry
+	.type _entry, @function
+_entry:
+	cli
 
-	lw ra, 0(sp)
-	lw sp, 4 * 1(sp)
-	lw gp, 4 * 2(sp)
-	lw tp, 4 * 3(sp)
-	lw t0, 4 * 5(sp)
-	lw t1, 4 * 6(sp)
-	lw t2, 4 * 7(sp)
-	lw s0, 4 * 8(sp)
-	lw s1, 4 * 9(sp)
-	lw a0, 4 * 10(sp)
-	lw a1, 4 * 11(sp)
-	lw a2, 4 * 12(sp)
-	lw a3, 4 * 13(sp)
-	lw a4, 4 * 14(sp)
-	lw a5, 4 * 15(sp)
-	lw a6, 4 * 16(sp)
-	lw a7, 4 * 17(sp)
-	lw s2, 4 * 18(sp)
-	lw s3, 4 * 19(sp)
-	lw s4, 4 * 20(sp)
-	lw s5, 4 * 21(sp)
-	lw s6, 4 * 22(sp)
-	lw s7, 4 * 23(sp)
-	lw s8, 4 * 24(sp)
-	lw s9, 4 * 25(sp)
-	lw s10, 4 * 26(sp)
-	lw s11, 4 * 27(sp)
-	lw t3, 4 * 28(sp)
-	lw t4, 4 * 29(sp)
-	lw t5, 4 * 30(sp)
+	movl $stack_top, %esp
+	movl $stack_bottom, %ebp
 
-	addi sp, sp, 4 * 31
+	pushl %ebx /* struct */
+	pushl %eax /* magic */
+	
+	.extern unpaged_init
+	call unpaged_init
 
-	sret
+	orl %eax, %eax
+	je 1f
+
+	pushl %eax
+
+	.extern kmain
+	call kmaim
+
+1:
+	hlt
+	jmp 1b

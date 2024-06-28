@@ -8,3 +8,5 @@
 -Wno-variadic-macros
 -Dinline=__inline__
 -Isrc/lib
+-Isys/
+-Isys/include

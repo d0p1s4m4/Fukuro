@@ -1,4 +1,0 @@
-
-rsource "aarch64/Kconfig"
-rsource "arm/Kconfig"
-rsource "x86/Kconfig"

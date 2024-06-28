@@ -38,7 +38,6 @@
 
 	.globl _entry
 _entry:
-
 	mov r0, #0
 	ldr r1, =(__bss_begin)
 	ldr r2, =(__bss_end)

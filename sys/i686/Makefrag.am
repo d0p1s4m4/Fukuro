@@ -1,0 +1,3 @@
+fukuro_SOURCES += \
+	i686/boot.S \
+	i686/unpaged_init.c

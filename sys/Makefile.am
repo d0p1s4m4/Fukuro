@@ -1,6 +1,7 @@
 fukuro_SOURCES =
 
-AM_LDFLAGS = -nostdlib -T$(srcdir)/$(systype)/linker.ld
+AM_CFLAGS = -I$(srcdir) -I$(srcdir)/include
+AM_LDFLAGS = -nostdlib -T$(srcdir)/$(systype)/kernel.lds
 
 if HOST_aarch64
 include aarch64/Makefrag.am
@@ -22,7 +23,7 @@ if HOST_riscv
 include riscv/Makefrag.am
 endif
 
-fukuro_SOURCES += main.c
+fukuro_SOURCES += main.c version.c
 
 exec_bootdir = \
 	$(exec_prefix)/boot

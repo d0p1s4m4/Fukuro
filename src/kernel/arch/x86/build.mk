@@ -1,1 +1,0 @@
-X86_SRCS	= serial.c vga.c greeting.c

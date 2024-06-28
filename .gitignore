@@ -31,3 +31,11 @@ build.mk
 /build-aux/install-sh
 /build-aux/missing
 *.cache
+*.log
+*.status
+stamp-h1
+.deps
+.dirstamp
+
+/sys/fukuro
+machine

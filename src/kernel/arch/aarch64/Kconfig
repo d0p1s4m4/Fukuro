@@ -1,8 +1,0 @@
-menu "AArch64 Architecture"
-	depends on AARCH64
-
-	config ARCH
-		string
-		default "aarch64"
-
-endmenu

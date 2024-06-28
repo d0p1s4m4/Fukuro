@@ -30,8 +30,14 @@
  * knowledge of the CeCILL license and that you accept its terms.
  */
 
+#include <fukuro/kinfo.h>
+
+static struct kernel_info kinfo;
 
 void
-kmain(void)
+kmain(struct kernel_info *boot_kinfo)
 {
+	memcpy(&kinfo, boot_kinfo, sizeof(struct kernel_info));
+
+	/* plat_init(); */
 }

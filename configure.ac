@@ -55,6 +55,8 @@ AC_PROG_LN_S
 AC_PROG_MKDIR_P
 AC_PROG_CC_C_O
 AM_PROG_AR
+AX_ASM_INLINE
+AX_C___ATTRIBUTE__
 
 AC_CHECK_TOOL([STRIP], [strip])
 AC_CHECK_TOOL([OBJCOPY], [objcopy])
@@ -77,10 +79,10 @@ AC_TYPE_SIZE_T
 AC_CONFIG_LINKS(["sys/machine":"$srcdir/sys/$systype"])
 
 AC_ARG_ENABLE([ncpus],
-	AS_HELP_STRING([--enable-ncpus=N], []),
-	[ncpu=$enable_ncpus]
-	[ncpu=1])
-AC_DEFINE_UNQUOTED([NCPUS], [$ncpus], [number of CPUs])
+  AS_HELP_STRING([--enable-ncpus=N], [specify the maximum number of cpus to be supported]),
+  [fukuro_ncpus=$enable_ncpus],
+  [1])
+AC_DEFINE_UNQUOTED([NCPUS], [$fukuro_ncpus], [number of CPUs])
 
 m4_include([srv/configfrag.ac])
 
@@ -90,9 +92,12 @@ AC_MSG_RESULT([
     Architecture:   $host_cpu
 
     C Compiler:     $CC
-    Asm Compiler:   $CCAS
+    ASM Compiler:   $CCAS
 
     CFLAGS:         $CFLAGS
     CCASFLAGS:      $CCASFLAG
     LDFLAGS:        $LDFLAGS
+
+    ================================
+    NCPU:           $fukuro_ncpus
 ])
