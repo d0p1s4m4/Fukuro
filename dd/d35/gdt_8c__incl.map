@@ -1,7 +1,0 @@
-<map id="src/kernel/arch/x86/32/gdt.c" name="src/kernel/arch/x86/32/gdt.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="46,5,178,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,115,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,48,79,82,74,79,97,45"/>
-<area shape="rect" id="Node000003" href="$d5/d4a/gdt_8h.html" title=" " alt="" coords="139,94,189,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,45,150,79,145,82,123,48"/>
-</map>

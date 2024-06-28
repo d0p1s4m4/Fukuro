@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['cpuid_5fdump_5finfo_0',['cpuid_dump_info',['../d8/d8d/cpuid_8c.html#ae63d91448696f1b6e7ea3f69674795b8',1,'cpuid_dump_info(void):&#160;cpuid.c'],['../da/ddd/cpuid_8h.html#ae63d91448696f1b6e7ea3f69674795b8',1,'cpuid_dump_info(void):&#160;cpuid.c']]]
+  ['kernel_5ftrap_0',['kernel_trap',['../dc/d6f/trap_8c.html#ab6243dc898246663a9f88d1aca6787d2',1,'trap.c']]],
+  ['kmain_1',['kmain',['../db/d5c/sys_2main_8c.html#a910843087b4c81c838c758604012a1b2',1,'main.c']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['none_0',['NONE',['../d1/d8c/logger_8h.html#ac91d55174d383848b976a34de843748eac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'logger.h']]]
+  ['num_0',['num',['../da/d69/structmultiboot__elf__section__header__table.html#a7beea8f6745c478347f244cadef771c2',1,'multiboot_elf_section_header_table']]]
 ];

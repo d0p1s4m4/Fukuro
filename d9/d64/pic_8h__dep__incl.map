@@ -1,9 +1,0 @@
-<map id="src/kernel/arch/x86/32/pic.h" name="src/kernel/arch/x86/32/pic.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="161,5,293,46"/>
-<area shape="rect" id="Node000002" href="$d1/d16/x86_232_2arch_8c.html" title=" " alt="" coords="5,94,137,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,56,108,96,105,91,177,51"/>
-<area shape="rect" id="Node000003" href="$d8/d78/isr_8c.html" title=" " alt="" coords="161,94,293,135"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,62,230,94,224,94,224,62"/>
-<area shape="rect" id="Node000004" href="$da/dde/pic_8c.html" title=" " alt="" coords="317,94,449,135"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="277,51,349,91,346,96,274,56"/>
-</map>

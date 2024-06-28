@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['registers_0',['registers',['../df/d94/structregisters.html',1,'']]]
+  ['phyaddrmap_0',['PhyAddrMap',['../d5/dfe/struct_phy_addr_map.html',1,'']]]
 ];

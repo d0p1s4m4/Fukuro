@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['selector_0',['selector',['../d4/db1/structidt__entry.html#a1c44289c163c1460544d6ee0900d02ba',1,'idt_entry::selector'],['../d4/d35/idt_8h.html#a1c44289c163c1460544d6ee0900d02ba',1,'selector:&#160;idt.h']]],
-  ['ss_1',['ss',['../df/d94/structregisters.html#a3c59346dd338708c94ca75cf21b78195',1,'registers']]]
+  ['reserved_0',['reserved',['../d3/d91/structmultiboot__aout__symbole__table.html#aa43c4c21b173ada1b6b7568956f0d650',1,'multiboot_aout_symbole_table']]]
 ];

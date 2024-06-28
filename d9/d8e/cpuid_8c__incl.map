@@ -1,9 +1,0 @@
-<map id="src/kernel/arch/x86/32/cpuid.c" name="src/kernel/arch/x86/32/cpuid.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="75,5,207,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,69,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,49,67,86,64,82,114,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="93,94,189,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,46,144,78,138,78,138,46"/>
-<area shape="rect" id="Node000004" href="$da/ddd/cpuid_8h.html" title=" " alt="" coords="213,94,275,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,44,218,82,214,86,165,49"/>
-</map>

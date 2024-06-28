@@ -1,0 +1,7 @@
+<map id="multiboot" name="multiboot">
+<area shape="rect" id="Node000001" title=" " alt="" coords="137,109,211,135"/>
+<area shape="rect" id="Node000002" href="$d3/d91/structmultiboot__aout__symbole__table.html" title=" " alt="" coords="5,5,167,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,55,165,107,161,111,113,59"/>
+<area shape="rect" id="Node000003" href="$da/d69/structmultiboot__elf__section__header__table.html" title=" " alt="" coords="191,5,336,46"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,59,187,111,183,107,232,55"/>
+</map>

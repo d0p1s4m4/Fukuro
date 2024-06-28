@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['amd_5fmagic_0',['AMD_MAGIC',['../da/ddd/cpuid_8h.html#a45695d0b5255fb29587cef9148529c69',1,'cpuid.h']]]
+  ['memmap_5fmax_0',['MEMMAP_MAX',['../d9/dcc/kinfo_8h.html#a05d3f2c0fe9ad44608d6a94e5c834781',1,'kinfo.h']]],
+  ['multiboot_5fbootloader_5fmagic_1',['MULTIBOOT_BOOTLOADER_MAGIC',['../d1/dc0/multiboot_8h.html#aacd617f4e3daafd6eab95fb6215ccae4',1,'multiboot.h']]],
+  ['multiboot_5fheader_5fmagic_2',['MULTIBOOT_HEADER_MAGIC',['../d1/dc0/multiboot_8h.html#ab36ad4b4a42c58aac4ad1f2ba13054e9',1,'multiboot.h']]],
+  ['multiboot_5finfo_5faout_5fshdr_3',['MULTIBOOT_INFO_AOUT_SHDR',['../d1/dc0/multiboot_8h.html#ad3dce8fca2aedcb5683cca5e20151ba1',1,'multiboot.h']]],
+  ['multiboot_5finfo_5faout_5fsyms_4',['MULTIBOOT_INFO_AOUT_SYMS',['../d1/dc0/multiboot_8h.html#a186ab9e55c5bc612b9fd7e10b4be5600',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fapm_5ftable_5',['MULTIBOOT_INFO_APM_TABLE',['../d1/dc0/multiboot_8h.html#aab73446f0cee2e9dc91f43eb9a0c806b',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fboot_5fdevice_6',['MULTIBOOT_INFO_BOOT_DEVICE',['../d1/dc0/multiboot_8h.html#a8f88c4a01d1d0d15cebddbf035b9ca99',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fbootloader_5fname_7',['MULTIBOOT_INFO_BOOTLOADER_NAME',['../d1/dc0/multiboot_8h.html#a71d284327e1b4e297cc052fe0e193f9e',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fcmdline_8',['MULTIBOOT_INFO_CMDLINE',['../d1/dc0/multiboot_8h.html#ae75fb4f821b7ab405d46318d9b90a677',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fconfig_5ftable_9',['MULTIBOOT_INFO_CONFIG_TABLE',['../d1/dc0/multiboot_8h.html#ad60e5b72325f5752e955879f3fbb44c3',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fdrives_10',['MULTIBOOT_INFO_DRIVES',['../d1/dc0/multiboot_8h.html#a30e18dd65d91da0bc0c67d7dd5544bda',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fframebuffer_11',['MULTIBOOT_INFO_FRAMEBUFFER',['../d1/dc0/multiboot_8h.html#a729efef01b783977b1e1a4a7c9aba971',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fmem_12',['MULTIBOOT_INFO_MEM',['../d1/dc0/multiboot_8h.html#addc5bbda3246a9fd16a8e2d8ad93b268',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fmmap_13',['MULTIBOOT_INFO_MMAP',['../d1/dc0/multiboot_8h.html#accd362f7ace477e8e64fdfe0b1daadcd',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fmods_14',['MULTIBOOT_INFO_MODS',['../d1/dc0/multiboot_8h.html#a9a06a0175854cc6af54ddb6bd798c5bc',1,'multiboot.h']]],
+  ['multiboot_5finfo_5fvbe_15',['MULTIBOOT_INFO_VBE',['../d1/dc0/multiboot_8h.html#a41a4afd65e151df5e7c042a0752475d9',1,'multiboot.h']]],
+  ['multiboot_5fmemory_5facpi_16',['MULTIBOOT_MEMORY_ACPI',['../d1/dc0/multiboot_8h.html#a00e9f9139c21ef1f677c423291494e24',1,'multiboot.h']]],
+  ['multiboot_5fmemory_5favailable_17',['MULTIBOOT_MEMORY_AVAILABLE',['../d1/dc0/multiboot_8h.html#a7fe141351ebcde0acbd6118ad0ea1a21',1,'multiboot.h']]],
+  ['multiboot_5fmemory_5fbadram_18',['MULTIBOOT_MEMORY_BADRAM',['../d1/dc0/multiboot_8h.html#a1604ec18ac949d88dab993904b08c075',1,'multiboot.h']]],
+  ['multiboot_5fmemory_5finfo_19',['MULTIBOOT_MEMORY_INFO',['../d1/dc0/multiboot_8h.html#afdfca6bbbf4b7dca40e9d43e58201f55',1,'multiboot.h']]],
+  ['multiboot_5fmemory_5fnvs_20',['MULTIBOOT_MEMORY_NVS',['../d1/dc0/multiboot_8h.html#a68f78286f7434d373a82f1b6f6473c72',1,'multiboot.h']]],
+  ['multiboot_5fmemory_5freserved_21',['MULTIBOOT_MEMORY_RESERVED',['../d1/dc0/multiboot_8h.html#a0299aedc71e1f6707181471bafb18e7c',1,'multiboot.h']]],
+  ['multiboot_5fpage_5falign_22',['MULTIBOOT_PAGE_ALIGN',['../d1/dc0/multiboot_8h.html#aab5e5487e858de2a031cd3f1232f7b60',1,'multiboot.h']]],
+  ['multiboot_5fvideo_23',['MULTIBOOT_VIDEO',['../d1/dc0/multiboot_8h.html#a3d87fa2c5a4f8ea5412200d9bcf63455',1,'multiboot.h']]]
 ];

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['debug_5fputchar_0',['debug_putchar',['../d0/d9d/aarch64_2arch_8c.html#a98d241bfccd3f2d799cdaac16948eb36',1,'debug_putchar(char c):&#160;arch.c'],['../d6/d2f/arm_2arch_8c.html#a98d241bfccd3f2d799cdaac16948eb36',1,'debug_putchar(char c):&#160;arch.c'],['../dd/d58/generic_2arch_8h.html#a29c1e09f86e90a3a229475f5cb2f020c',1,'debug_putchar(char):&#160;arch.c'],['../db/d81/x86_2serial_8c.html#a98d241bfccd3f2d799cdaac16948eb36',1,'debug_putchar(char c):&#160;serial.c'],['../d8/db9/test_8c.html#a05d08909de96a61761200daa2e0feedc',1,'debug_putchar(const char c):&#160;test.c']]],
-  ['debug_5fputs_1',['debug_puts',['../d0/d9d/aarch64_2arch_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;arch.c'],['../d6/d2f/arm_2arch_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;arch.c'],['../dd/d58/generic_2arch_8h.html#aab502f2ad3d22c8b9bb9d484ed8149bd',1,'debug_puts(const char *):&#160;arch.c'],['../db/d81/x86_2serial_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;serial.c'],['../d8/db9/test_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'debug_puts(const char *str):&#160;test.c']]],
-  ['delay_5fcycles_2',['delay_cycles',['../d4/d72/aarch64_2include_2machine_2arch_8h.html#a11396a8835a8a6a59e989c55547b4509',1,'arch.h']]],
-  ['do_20i_20submit_20a_20good_20bug_20report_3',['How Do I Submit A (GOOD) Bug Report?',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7',1,'']]],
-  ['ds_4',['ds',['../df/d94/structregisters.html#a6fe20edd854a1a653ae71ccf541a6b8b',1,'registers']]]
+  ['debug_5fputchar_0',['debug_putchar',['../d8/db9/test_8c.html#a05d08909de96a61761200daa2e0feedc',1,'test.c']]],
+  ['debug_5fputs_1',['debug_puts',['../d8/db9/test_8c.html#ae0558e153b6728dc6b4ab5df31e5a944',1,'test.c']]],
+  ['do_20i_20submit_20a_20good_20bug_20report_2',['How Do I Submit A (GOOD) Bug Report?',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7',1,'']]],
+  ['drives_5faddr_3',['drives_addr',['../d8/d0f/structmultiboot.html#a7f1068d12a37a44377d4fdf6c36bcb7b',1,'multiboot']]],
+  ['drives_5flength_4',['drives_length',['../d8/d0f/structmultiboot.html#a498997f92ef71679db87e9eb99e91cf5',1,'multiboot']]]
 ];
