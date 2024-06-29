@@ -123,26 +123,29 @@ $(document).ready(function(){initNavTree('da/d0a/vm_8h_source.html','../../'); i
 <a href="../../da/d0a/vm_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef FUKURO_SYS_VM_VM_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor"># define FUKURO_SYS_VM_VM_H 1</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="../../d4/d9b/struct_vm_object.html">    4</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>} <a class="code hl_struct" href="../../d4/d9b/struct_vm_object.html">VmObject</a>;</div>
-</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/* our virtual memory manager is mosly based on Rashid&#39;s paper </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * https://research.cs.wisc.edu/areas/os/Qual/papers/mach-memory.pdf</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* our virtual memory manager is mosly based on Rashid&#39;s paper */</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#ad016c42657c1ff2e2ad5f755d9247f19">   10</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#ad016c42657c1ff2e2ad5f755d9247f19">vm_allocate</a>();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a26c1196e8e9003e397225b4dd6bee408">   11</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a26c1196e8e9003e397225b4dd6bee408">vm_copy</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a6c7ba9422c09671244ceaf4ae14498b3">   12</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a6c7ba9422c09671244ceaf4ae14498b3">vm_deallocate</a>();</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a4b499cada35e6b56632f1b2fb9dea05b">   13</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a4b499cada35e6b56632f1b2fb9dea05b">vm_inherit</a>();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a40dc8a880c21ebd0994ad1c509dc106b">   14</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a40dc8a880c21ebd0994ad1c509dc106b">vm_protect</a>();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#afad9cf739c4c88bbeedecb822e3a79a4">   15</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#afad9cf739c4c88bbeedecb822e3a79a4">vm_read</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a01bceb8680fd84da175bc9c00fba5f72">   16</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a01bceb8680fd84da175bc9c00fba5f72">vm_regions</a>();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a824fdd82ee9a1d40f3254d40357ea4a7">   17</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a824fdd82ee9a1d40f3254d40357ea4a7">vm_statistics</a>();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#ac412a2da449fe5f8469d41a1558f4fa2">   18</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#ac412a2da449fe5f8469d41a1558f4fa2">vm_write</a>();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">/* !FUKURO_SYS_VM_VM_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astruct_vm_object_html"><div class="ttname"><a href="../../d4/d9b/struct_vm_object.html">VmObject</a></div><div class="ttdef"><b>Definition</b> vm.h:4</div></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#ad016c42657c1ff2e2ad5f755d9247f19">   12</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#ad016c42657c1ff2e2ad5f755d9247f19">vm_allocate</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a26c1196e8e9003e397225b4dd6bee408">   17</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a26c1196e8e9003e397225b4dd6bee408">vm_copy</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a6c7ba9422c09671244ceaf4ae14498b3">   22</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a6c7ba9422c09671244ceaf4ae14498b3">vm_deallocate</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a4b499cada35e6b56632f1b2fb9dea05b">   27</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a4b499cada35e6b56632f1b2fb9dea05b">vm_inherit</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a40dc8a880c21ebd0994ad1c509dc106b">   32</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a40dc8a880c21ebd0994ad1c509dc106b">vm_protect</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#afad9cf739c4c88bbeedecb822e3a79a4">   37</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#afad9cf739c4c88bbeedecb822e3a79a4">vm_read</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a01bceb8680fd84da175bc9c00fba5f72">   42</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a01bceb8680fd84da175bc9c00fba5f72">vm_regions</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#a824fdd82ee9a1d40f3254d40357ea4a7">   47</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#a824fdd82ee9a1d40f3254d40357ea4a7">vm_statistics</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../da/d0a/vm_8h.html#ac412a2da449fe5f8469d41a1558f4fa2">   52</a></span><a class="code hl_function" href="../../da/d0a/vm_8h.html#ac412a2da449fe5f8469d41a1558f4fa2">vm_write</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif </span><span class="comment">/* !FUKURO_SYS_VM_VM_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="avm_8h_html_a01bceb8680fd84da175bc9c00fba5f72"><div class="ttname"><a href="../../da/d0a/vm_8h.html#a01bceb8680fd84da175bc9c00fba5f72">vm_regions</a></div><div class="ttdeci">vm_regions()</div></div>
 <div class="ttc" id="avm_8h_html_a26c1196e8e9003e397225b4dd6bee408"><div class="ttname"><a href="../../da/d0a/vm_8h.html#a26c1196e8e9003e397225b4dd6bee408">vm_copy</a></div><div class="ttdeci">vm_copy()</div></div>
 <div class="ttc" id="avm_8h_html_a40dc8a880c21ebd0994ad1c509dc106b"><div class="ttname"><a href="../../da/d0a/vm_8h.html#a40dc8a880c21ebd0994ad1c509dc106b">vm_protect</a></div><div class="ttdeci">vm_protect()</div></div>

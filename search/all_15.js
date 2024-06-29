@@ -17,6 +17,5 @@ var searchData=
   ['vm_5fread_14',['vm_read',['../da/d0a/vm_8h.html#afad9cf739c4c88bbeedecb822e3a79a4',1,'vm.h']]],
   ['vm_5fregions_15',['vm_regions',['../da/d0a/vm_8h.html#a01bceb8680fd84da175bc9c00fba5f72',1,'vm.h']]],
   ['vm_5fstatistics_16',['vm_statistics',['../da/d0a/vm_8h.html#a824fdd82ee9a1d40f3254d40357ea4a7',1,'vm.h']]],
-  ['vm_5fwrite_17',['vm_write',['../da/d0a/vm_8h.html#ac412a2da449fe5f8469d41a1558f4fa2',1,'vm.h']]],
-  ['vmobject_18',['VmObject',['../d4/d9b/struct_vm_object.html',1,'']]]
+  ['vm_5fwrite_17',['vm_write',['../da/d0a/vm_8h.html#ac412a2da449fe5f8469d41a1558f4fa2',1,'vm.h']]]
 ];

@@ -1,12 +1,13 @@
 <map id="sys/i686/unpaged_init.c" name="sys/i686/unpaged_init.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="33,5,189,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="43,153,107,178"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,34,39,52,24,65,12,80,9,97,15,113,28,128,44,142,40,146,24,132,10,115,3,97,7,78,20,61,36,48,70,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="21,79,89,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,33,76,68,72,65,100,30"/>
-<area shape="rect" id="Node000004" href="$d1/dc0/multiboot_8h.html" title=" " alt="" coords="113,79,221,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,30,150,65,146,68,118,33"/>
-<area shape="rect" id="Node000005" href="$d9/dcc/kinfo_8h.html" title=" " alt="" coords="245,79,345,105"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="143,29,251,71,249,75,141,34"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="153,107,104,145,101,141,150,103"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="34,5,190,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="137,153,200,178"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,34,49,47,23,64,9,83,9,93,13,103,35,126,63,141,93,152,122,158,121,163,92,157,61,146,32,130,9,106,3,93,4,81,20,60,46,42,75,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="23,79,90,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,33,77,68,73,65,101,30"/>
+<area shape="rect" id="Node000004" href="$d1/dc0/multiboot_8h.html" title=" " alt="" coords="114,79,222,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="124,30,152,65,147,68,119,33"/>
+<area shape="rect" id="Node000005" href="$d9/dcc/kinfo_8h.html" title=" " alt="" coords="247,79,346,105"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="144,29,252,71,250,75,143,34"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="171,105,171,137,166,137,166,105"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="276,108,205,147,202,142,273,103"/>
 </map>

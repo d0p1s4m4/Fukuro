@@ -1,0 +1,7 @@
+<map id="sys/i686/pmap.h" name="sys/i686/pmap.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="37,5,152,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,69,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,33,58,68,54,65,83,30"/>
+<area shape="rect" id="Node000003" href="$df/d63/spinlock_8h.html" title=" " alt="" coords="93,79,213,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,30,136,65,132,69,102,33"/>
+</map>

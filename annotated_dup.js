@@ -7,6 +7,7 @@ var annotated_dup =
     [ "multiboot_elf_section_header_table", "da/d69/structmultiboot__elf__section__header__table.html", "da/d69/structmultiboot__elf__section__header__table" ],
     [ "multiboot_mmap_entry", "d5/de2/structmultiboot__mmap__entry.html", "d5/de2/structmultiboot__mmap__entry" ],
     [ "PhyAddrMap", "d5/dfe/struct_phy_addr_map.html", null ],
+    [ "pmap", "dc/d18/structpmap.html", "dc/d18/structpmap" ],
     [ "SbiRet", "dc/d86/struct_sbi_ret.html", "dc/d86/struct_sbi_ret" ],
-    [ "VmObject", "d4/d9b/struct_vm_object.html", null ]
+    [ "spinlock", "d1/d08/structspinlock.html", "d1/d08/structspinlock" ]
 ];

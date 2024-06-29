@@ -1,6 +1,5 @@
 var vm_8h =
 [
-    [ "VmObject", "d4/d9b/struct_vm_object.html", null ],
     [ "vm_allocate", "da/d0a/vm_8h.html#ad016c42657c1ff2e2ad5f755d9247f19", null ],
     [ "vm_copy", "da/d0a/vm_8h.html#a26c1196e8e9003e397225b4dd6bee408", null ],
     [ "vm_deallocate", "da/d0a/vm_8h.html#a6c7ba9422c09671244ceaf4ae14498b3", null ],
